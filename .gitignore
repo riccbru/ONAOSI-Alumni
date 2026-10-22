@@ -1,0 +1,11 @@
+# Local AI Tools & Skills
+.claude/
+.skills/
+.agents/
+
+# Dependencies & Builds
+node_modules/
+.next/
+build/
+dist/
+.env*.local

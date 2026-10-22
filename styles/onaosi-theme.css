@@ -1,0 +1,50 @@
+/* ONAOSI Design System — CSS variables + font istituzionale Titillium Web.
+   Token identici a https://onaosi.it/ (css/my_style.css). */
+
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  /* Blu primario istituzionale */
+  --onaosi-primary-950: #00264d;
+  --onaosi-primary-900: #003366;
+  --onaosi-primary-800: #004080;
+  --onaosi-primary-700: #004d99;
+  --onaosi-primary-600: #0059b3;
+  --onaosi-primary-500: #0066cc; /* blu brand */
+  --onaosi-primary-400: #2079d4;
+  --onaosi-primary-350: #4390d8;
+  --onaosi-primary-300: #66a5e3;
+  --onaosi-primary-200: #8ebeed;
+  --onaosi-primary-100: #d1e7ff;
+
+  /* Accento ciano/azzurro */
+  --onaosi-accent: #65dde0;
+  --onaosi-accent-soft: #428fdb;
+
+  /* Testo */
+  --onaosi-text: #1c2024;
+  --onaosi-text-secondary: #5a6772;
+  --onaosi-text-inverse: #f5f5f0;
+
+  /* Neutri / sfondi */
+  --onaosi-bg: #fafafa;
+  --onaosi-bg-alt: #f2f4f8;
+  --onaosi-off-white: #f5f5f0;
+  --onaosi-panel-dark: #30373d;
+  --onaosi-gray-on-dark: #c6cace;
+  --onaosi-border: #e0e0e0;
+
+  /* Tipografia */
+  --onaosi-font-sans: "Titillium Web", "Open Sans", Arial, Helvetica, sans-serif;
+
+  /* Ombreggiature native */
+  --onaosi-shadow-card: 0 2px 4px rgba(30, 30, 100, 0.25);
+  --onaosi-shadow-inset-subtle: inset 0 0 3px 1px rgba(0, 0, 0, 0.15);
+  --onaosi-shadow-inset-body: inset 2px 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+body {
+  font-family: var(--onaosi-font-sans);
+  color: var(--onaosi-text);
+  background-color: var(--onaosi-bg);
+}
