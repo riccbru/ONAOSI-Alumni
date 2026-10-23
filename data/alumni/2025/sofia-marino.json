@@ -3,7 +3,7 @@
   "firstName": "Sofia",
   "lastName": "Marino",
   "avatar": "https://picsum.photos/seed/sofia-marino/400/400",
-  "tagline": "Passionate about open science",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Angela White"],
     "pis": ["Domenico Franco"],
-    "lab": "Kavli Institute for Cosmological Physics",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Data Analysis of the 2x2 Detector Response in the first DUNE neutrino beam experiment at Fermilab",
-    "summary": "During the fellowship at University of Chicago, worked in the Kavli Institute for Cosmological Physics under Daniel Holz on Robotics and Control, contributing to research that combines bioinformatics with advanced computational methods.",
-    "topics": [
-      "Robotics",
-      "Control",
-      "RL"
-    ]
+    "projectAbstract": "The 2x2 Detector experiment at Fermilab (FNAL) is a pioneering initiative within the DUNE (Deep Underground Neutrino Experiment) collaboration, which aims to unravel fundamental questions about neutrino properties and matter-antimatter asymmetry by studying neutrinos over a long baseline from FNAL to the Sanford Underground Research Facility (SURF). This project involves an analysis of data collected by the 2x2 detector, representing the first DUNE detector to operate within a neutrino beam and serving as a critical prototype for DUNE’s large-scale near detector modules. The primary goal is to investigate the detector’s response to various neutrino events, enabling a comprehensive understanding of its performance across a range of operational conditions. The analysis will focus on response characteristics, covering signal processing dynamics, calibration stability, event reconstruction, and sensitivity to neutrino-induced events. This detailed examination will provide essential insights into optimizing detector design, improving operational stability, and achieving precision in reconstructing neutrino interactions. With data sourced from Fermilab’s NuMI Neutrino Beam, this project will yield critical knowledge directly supporting DUNE’s mission to advance the understanding of neutrino physics."
   },
   "background": {
-    "homeUniversity": "Università degli Studi di Napoli Federico II",
-    "degree": "MSc Bioinformatics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "R&D Engineer",
-    "institution": "Nuxco Research Center",
-    "city": "Nuxco",
-    "country": "Mexico"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Robotics",
-      "Control",
-      "RL"
-    ],
-    "email": "sofia.marino@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/sofia-marino",
-    "github": "https://github.com/whitefish807",
-    "scholar": "https://scholar.google.com/citations?user=whitefish8"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

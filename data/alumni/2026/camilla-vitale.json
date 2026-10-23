@@ -3,7 +3,7 @@
   "firstName": "Camilla",
   "lastName": "Vitale",
   "avatar": "https://picsum.photos/seed/camilla-vitale/400/400",
-  "tagline": "Connecting people and ideas",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "National Taiwan University",
     "tutors": ["YiChia Chiu"],
     "pis": ["Ruby Yun-Ju Huang"],
-    "lab": "Department of Chemistry",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Assessing the trajectory of metastatic tropism of SNAI1 acetylation in ovarian cancer cells",
-    "summary": "During the fellowship at National Taiwan University, worked in the Department of Chemistry under Chun-Nan Hsu on Biophysics and Microscopy, contributing to research that combines robotics and automation with advanced computational methods.",
-    "topics": [
-      "Biophysics",
-      "Microscopy",
-      "Imaging"
-    ]
+    "projectAbstract": "SNAI1 is a well-known transcriptional driver of epithelial-mesenchymal transition (EMT). It is widely known as the zinc finger protein transcription repressor, which down-regulates the expression of epithelial genes. Multiple studies have elucidated that acetylation of SNAI1 in Lys 146 and Lys 187 switches Snail function from transcriptional repressor to an activator function. The role of non-acetylated SNAI1 has been elucidated that the acetylation of SNAI1 is crucial in inducing the cytokine and mesenchymal genes within the tumor microenvironment (TME) as a transcription activator. Wild type SNAI1 has the dual function as a transcription activator and suppressor while non-acetylated SNAI1 only has the transcription suppressor function. The consequence of SNAI1 acetylation is to promote the recruitment of tumor associated macrophages after chemokine induction. The wild-type and non-acetylated SNAI1 model is thus an ideal one to distinguish the downstream effects of SNAI1-driven caner progression. To verify the impact of SNAI1 acetylation in vivo, this project will assess the tumor growth and metastatic potential of ovarian cancer cells overexpressing wild type and non-acetylated SNAI1 by using the chick Chorioallantoic Membrane (CAM) model. We and others have shown that the CAM model is an efficient system in assessing tumor growth under biological microenvironment as well as evaluating cancer functionalities such as angiogenesis and metastatic potential. The tumor growth will be assessed by the serial ultrasound imaging measurement to determine the change in tumor volume over time. The metastatic ability was evaluated  by detecting human specific Alu sequences through PCR from the chick embryos organs."
   },
   "background": {
-    "homeUniversity": "Università di Salerno",
-    "degree": "MSc Robotics and Automation"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Software Engineer",
-    "institution": "Lauvsnes Research Center",
-    "city": "Lauvsnes",
-    "country": "Norway"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Biophysics",
-      "Microscopy",
-      "Imaging"
-    ],
-    "email": "camilla.vitale@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/camilla-vitale",
-    "github": "https://github.com/happycat664",
-    "scholar": "https://scholar.google.com/citations?user=happycat66"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

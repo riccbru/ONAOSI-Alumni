@@ -3,43 +3,34 @@
   "firstName": "Veronica",
   "lastName": "Montana",
   "avatar": "https://picsum.photos/seed/veronica-montana/400/400",
-  "tagline": "Learning something new every day",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Chicago",
     "hostInstitution": "University of Chicago",
-    "tutors": ["Lin Piao"],
-    "pis": ["Willard Sharp"],
-    "lab": "Toyota Technological Institute at Chicago",
-    "projectTitle": "Imaging of Brain Hypoxia and Oxygen by PET in Cardiac Arrest Model",
-    "summary": "During the fellowship at University of Chicago, worked in the Toyota Technological Institute at Chicago under Gregory Shakhnarovich on Chemistry and Catalysis, contributing to research that combines applied physics with advanced computational methods.",
-    "topics": [
-      "Chemistry",
-      "Catalysis",
-      "Molecular Dynamics"
-    ]
+    "tutors": ["Mythra Varun Nemallapudi"],
+    "pis": ["Chin-Tu Chen"],
+    "lab": "lab",
+    "topics": ["topic"],
+    "projectTitle": "Quantitative PET Imaging for Investigation of Brain and Behavioral Disorders",
+    "projectAbstract": "Positron emission tomography (PET) is a molecular and nuclear medicine imaging modality that offers relatively high degree of quantitative accuracy and reliability in assessing brain and behavior related function, physiology, and disorders. Our laboratories conduct brain PET imaging research includes designing and developing novel application-specific PET imaging instruments, related quantitative imaging processing, reconstruction and analysis methods and tools, various PET neuroimaging radiopharmaceuticals, applying these PET imaging methodologies to important brain and behavioral sciences and their disorders. In recent years, we have been investigating addiction biology especially those related to nicotine effects and smoking cessation, and opioids and pain control, and Alzheimer’s disease and related dementia (ADRD), and the interplay of addictions and ADRD."
   },
   "background": {
-    "homeUniversity": "Scuola Normale Superiore di Pisa",
-    "degree": "MSc Applied Physics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Machine Learning Engineer",
-    "institution": "Sheffield Research Center",
-    "city": "Sheffield",
-    "country": "United Kingdom"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "Chemistry",
-      "Catalysis",
-      "Molecular Dynamics"
-    ],
-    "email": "veronica.montana@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/veronica-montana",
-    "github": "https://github.com/happykoala630",
-    "scholar": "https://scholar.google.com/citations?user=happykoala"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

@@ -3,7 +3,7 @@
   "firstName": "Giulia",
   "lastName": "Ferrari",
   "avatar": "https://picsum.photos/seed/giulia-ferrari/400/400",
-  "tagline": "Bridging engineering and medicine",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Giavanna Jadick"],
     "pis": ["Patrick La Riviere"],
-    "lab": "Pritzker School of Molecular Engineering",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Toward Phase Contrast CT",
-    "summary": "During the fellowship at University of Chicago, worked in the Pritzker School of Molecular Engineering under Juan de Pablo on Genomics and Bioinformatics, contributing to research that combines cybersecurity with advanced computational methods.",
-    "topics": [
-      "Genomics",
-      "Bioinformatics",
-      "NGS"
-    ]
+    "projectAbstract": "There is a growing need for a rapid, low-dose, three-dimensional (3D) biomedical imaging modality with high soft-tissue contrast. Absorption-contrast x-ray imaging is clinically ubiquitous due to its rapid acquisition and possibility for 3D reconstruction of internal anatomy with computed tomography (CT). Unfortunately, it produces poor contrast within similarly absorptive regions of the anatomy; such contrast is essential for soft-tissue imaging tasks ranging from sub-cellular to human scales. X-ray phase-contrast imaging (XPCI) has the potential to solve this problem. Images with phase contrast can be used to solve the phase retrieval problem: the reconstruction of both absorption and phase images. In the x-ray energy range, phase presents a better soft-tissue contrast mechanism than absorption, because an object’s energy-dependent phase-shifting component is several orders of magnitude larger than its absorptive component. However, phase retrieval faces several challenges that must be addressed before it can be realized clinically: the practical need to acquire multiple images to solve for the two components, the widespread use of simplifying approximations that reduce quantitative accuracy, and the high wave front sampling requirements for visualizing phase-contrast information. With the emerging use of high-resolution, energydiscriminating photon-counting detectors (PCDs) in biomedical imaging, multi-energy or “spectral” XPCI has unexplored potential as a uniquely convenient method for overcoming these challenges. The primary objective of the proposed research is to develop a rapid, accurate, and experimentally convenient spectral XPCI framework for solving the phase retrieval problem. While many imaging setups have been developed for XPCI, we focus on propagation-based imaging due to its experimental simplicity and lack of need for any specialized optical equipment. Conventional propagation-based phase retrieval algorithms have been limited by their use of unrealistic approximations or inconvenient, error-prone image acquisition schemes."
   },
   "background": {
-    "homeUniversity": "Università di Bologna",
-    "degree": "MSc Cybersecurity"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Postdoctoral Researcher",
-    "institution": "Boguslav Research Center",
-    "city": "Boguslav",
-    "country": "Ukraine"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Genomics",
-      "Bioinformatics",
-      "NGS"
-    ],
-    "email": "giulia.ferrari@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/giulia-ferrari",
-    "github": "https://github.com/smallrabbit245",
-    "scholar": "https://scholar.google.com/citations?user=smallrabbi"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

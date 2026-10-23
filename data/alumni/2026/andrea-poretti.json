@@ -3,43 +3,34 @@
   "firstName": "Andrea",
   "lastName": "Poretti",
   "avatar": "https://picsum.photos/seed/andrea-poretti/400/400",
-  "tagline": "Turning data into discovery",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Chicago",
     "hostInstitution": "University of Chicago",
-    "tutors": ["Mythra Varun Nemallapudi"],
-    "pis": ["Chin-Tu Chen"],
-    "lab": "Department of Computer Science",
-    "projectTitle": "Quantitative PET Imaging for Investigation of Brain and Behavioral Disorders",
-    "summary": "During the fellowship at University of Chicago, worked in the Department of Computer Science under Michael Franklin on ML and DL, contributing to research that combines computer science with advanced computational methods.",
-    "topics": [
-      "ML",
-      "DL",
-      "Computer Vision"
-    ]
+    "tutors": ["Lin Piao"],
+    "pis": ["Willard Sharp"],
+    "lab": "lab",
+    "topics": ["topic"],
+    "projectTitle": "Imaging of Brain Hypoxia and Oxygen by PET in Cardiac Arrest Model",
+    "projectAbstract": "Injury caused by ischemia and reperfusion (I/R) has been identified as a major contributor to morbidity and mortality in a variety of clinical entities, including cardiac arrest (CA). An imbalance between oxygen demand and supply within the organ beds causes profound tissue hypoxia during ischemia. Following reperfusion primed cells may exhibit a burst of reoxygenation resulting in I/R injuries. It has long been recognized that I/R-mediated injuries play a role in the pathophysiology of CA. Several strategies aiming at prevention of I/R injuries including antioxidant supplement and hypothermic treatment have been tested in both experimental and clinical CA setting. However, the effects of these interventions have been inconsistent. This is partly because the tissue hypoxic status and intracellular oxygen concentration during and after CA remain unclear. Better understanding of oxygen metabolism in organs during and after CA will delineate the mechanisms of I/R induced injuries and provide more precise information to guide the intervention strategies. To date, there have been no established techniques for in vivo oxygen measurements in CA patients clinically."
   },
   "background": {
-    "homeUniversity": "Università Ca' Foscari Venezia",
-    "degree": "MSc Computer Science"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Data Scientist",
-    "institution": "Anand Research Center",
-    "city": "Anand",
-    "country": "India"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "ML",
-      "DL",
-      "Computer Vision"
-    ],
-    "email": "andrea.poretti@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/andrea-poretti",
-    "github": "https://github.com/orangeladybug814",
-    "scholar": "https://scholar.google.com/citations?user=orangelady"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

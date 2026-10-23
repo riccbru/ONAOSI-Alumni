@@ -9,12 +9,12 @@
     "isTeamLeader": true,
     "destination": "Chicago",
     "hostInstitution": "University of Chicago",
-    "tutors": ["Avinay Bath", "Bonnie Fleming"],
+    "tutors": ["Avinay Bhat", "Bonnie Fleming"],
     "pis": ["Chin-Tu Chen"],
     "lab": "Michelson Center for Physics",
+    "topics": ["ML", "DL", "CNN"],
     "projectTitle": "Using Machine Learning for Improved Imaging Interpretation of Alzheimer’s Disease",
-    "summary": "Summary",
-    "topics": ["ML", "DL", "CNN"]
+    "projectAbstract": "This project will investigate neuroanatomical changes in Alzheimer’s disease using structural MRI from the Alzheimer’s Disease Neuroimaging Initiative (ADNI) and high-resolution brain segmentation with DL+DiReCT. The focus will be on two related questions: (1) how APOE ε4 genetic risk influences regional and longitudinal patterns of brain atrophy, and (2) how educational attainment to be used as a measure of cognitive reserve modulates structural decline in individuals with mild cognitive impairment and Alzheimer’s disease. After preprocessing T1-weighted MRI scans, DL+DiReCT will generate volumetric and cortical-thickness measurements across more than 100 cortical and subcortical regions, enabling detailed radiomic and voxel-based analyses. The ONAOSI student will assist project team members with data selection, MRI preprocessing, segmentation, organization of regional morphometric outputs, and statistical analysis to produce interpretable neurobiological insights into genetic vulnerability and cognitive-reserve–related resilience in Alzheimer’s disease."
   },
   "background": {
     "homeUniversity": "Politecnico di Torino",
@@ -29,9 +29,9 @@
   "networking": {
     "openToChat": true,
     "askMeAbout": ["askMeAbout"],
-    "email": "email",
-    "linkedin": "linkedin",
-    "github": "github",
-    "scholar": "scholar"
+    "email": "ricbruno@uchicago.edu",
+    "linkedin": "https://www.linkedin.com/in/riccbrun/",
+    "github": "https://github.com/riccbru",
+    "scholar": "Google Scholar"
   } 
 }

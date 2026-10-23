@@ -3,7 +3,7 @@
   "firstName": "Francesca",
   "lastName": "Romano",
   "avatar": "https://picsum.photos/seed/francesca-romano/400/400",
-  "tagline": "Building tools for better science",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Hee-Jong Kim"],
     "pis": ["Chien-Min Kao"],
-    "lab": "Toyota Technological Institute at Chicago",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Characterizing PET detectors",
-    "summary": "During the fellowship at University of Chicago, worked in the Toyota Technological Institute at Chicago under Gregory Shakhnarovich on NLP and Transformers, contributing to research that combines biomedical engineering with advanced computational methods.",
-    "topics": [
-      "NLP",
-      "Transformers",
-      "LLM"
-    ]
+    "projectAbstract": "Positron emission tomography (PET) is a major molecular imaging modality that plays a key role at the forefront of medicine. Complementary to anatomical imaging by x-ray and magnetic resonance imaging (MRI), PET allows doctors and researchers to examine functions in a subject such as metabolism, gene expression, cell proliferation, and uptake of drugs. Particularly, it is useful for studying and diagnosing cancer and neurodegenerative diseases that fundamentally are functional disorders. In this project, the student will be exposed to the concept and practice of molecular imaging, and learn the basic principle of radiation detectors, the performance requirements for PET imaging, and other practical considerations for PET detector, through hand-on experiments on unique PET detectors that have been developed or are under development in Kao’s lab at UChicago. One challenge in PET instrumentation is the development of economic and compact PET detectors of high performance that consume low power and are compatible with magnetic fields. Such detectors are useful for developing hybrid systems that integrate, for example, MRI and PET or electron parametric resonance imaging (EPRI) and PET. Another challenge is large-area modular detectors capable of fast-time detection for the so-called time-of-flight (TOF) imaging. Such detectors are useful for developing one meter or longer ultra-sensitive systems for imaging the entire body at a single shot. Many have the opinion that such total-body imaging will create paradigm shifts in many areas of medicine. For the former, we have developed a detector that multiplexes signals produced by 1,152 small scintillators (1 mm x 1mm x 10 mm) into only 6 outputs. For the latter, we have been exploring the use of a 20 cm x 20 cm large multichannel plate (MCP) photomultiplier tube (PMT) called the Large Area Picosecond PhotoDetector (LAPPD), whose single electron timing resolution can achieve 40 ps, in conjunction with the use of novel scintillators."
   },
   "background": {
-    "homeUniversity": "Politecnico di Milano",
-    "degree": "MSc Biomedical Engineering"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Machine Learning Engineer",
-    "institution": "Sils im Domleschg Research Center",
-    "city": "Sils im Domleschg",
-    "country": "Switzerland"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "NLP",
-      "Transformers",
-      "LLM"
-    ],
-    "email": "francesca.romano@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/francesca-romano",
-    "github": "https://github.com/orangewolf546",
-    "scholar": "https://scholar.google.com/citations?user=orangewolf"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

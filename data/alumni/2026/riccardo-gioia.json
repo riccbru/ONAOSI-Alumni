@@ -3,7 +3,7 @@
   "firstName": "Riccardo",
   "lastName": "Gioia",
   "avatar": "https://picsum.photos/seed/riccardo-gioia/400/400",
-  "tagline": "Driven by hard problems",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Hannah Zhang"],
     "pis": ["Russell Szmulewitz", "Chin-Tu Chen"],
-    "lab": "Pritzker School of Molecular Engineering",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Molecular Imaging and Theranostics Toward Personalized Medicine in Cancer",
-    "summary": "During the fellowship at University of Chicago, worked in the Pritzker School of Molecular Engineering under Juan de Pablo on Economics and Econometrics, contributing to research that combines molecular biology with advanced computational methods.",
-    "topics": [
-      "Economics",
-      "Econometrics",
-      "Policy"
-    ]
+    "projectAbstract": "Theranostics is an emerging nascent /ield in medicine and biology that combines therapy and diagnosis in an integrated consideration of developing novel pharmaceutical platforms to improve both assessment and treatment of diseases such as cancer. Molecular imaging methodologies, especially positron emission tomography (PET) and single-photon emission computed tomography (SPECT), are employed in theranostics for the initial, preferably early, diagnosis, for assessment and evaluation of the therapeutic effects after each treatment cycle, as well as for enabling and facilitating designing adaptive strategies to improve treatment outcomes in the midst of therapy, making the personalized medicine practically feasible. In the past few years, while the clinical uses of Ga-68 and Lu-177 radiolabeled PSMA compounds have been rapidly increasing for PET imaging and beta-therapy of neuroendocrine tumors and prostate cancer respectively, the potentials of theranostics are yet to be fully investigated and explored. For example, collaborating with scientists from Argonne National Laboratory, our laboratories have been developing Sc-43/Sc-47 “true” radiotheranotic pairs for improving cancer therapy experience and patient outcomes, with emphases on advancing personalized medicine practice. These novel theranostics research and development pipelines include accelerator and cyclotron-based production of radioisotopes, development of novel targeted radiopharmaceuticals for PET or SPECT imaging, and radionuclide therapy, cellular validation of the newly developed radio agents, preclinical imaging studies of animal models, first-in human and human clinical trials, as well as the related image processing, reconstruction, and analysis, kinetic modeling, dosimetry, bioinformatics, etc."
   },
   "background": {
-    "homeUniversity": "Politecnico di Bari",
-    "degree": "MSc Molecular Biology"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Postdoctoral Researcher",
-    "institution": "Iğdir Research Center",
-    "city": "Iğdir",
-    "country": "Turkey"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Economics",
-      "Econometrics",
-      "Policy"
-    ],
-    "email": "riccardo.gioia@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/riccardo-gioia",
-    "github": "https://github.com/angryfish107",
-    "scholar": "https://scholar.google.com/citations?user=angryfish1"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

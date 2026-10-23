@@ -73,6 +73,25 @@ const config: Config = {
         "inset-subtle": "inset 0 0 3px 1px rgba(0,0,0,0.15)",
         "inset-body": "inset 2px 2px 5px rgba(0,0,0,0.04)",
         "inset-field": "inset 1px 1px 0 rgba(0,0,0,0.1), inset 0 -1px 0 rgba(0,0,0,0.07)",
+        drawer: "-8px 0 40px rgba(0,38,77,0.18)",
+        "sheet": "0 -8px 40px rgba(0,38,77,0.22)",
+        glow: "0 0 0 4px rgba(101,221,224,0.18)",
+      },
+      // Curve di easing (Emil Kowalski) — più "punch" delle built-in CSS
+      transitionTimingFunction: {
+        "out-strong": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "in-out-strong": "cubic-bezier(0.77, 0, 0.175, 1)",
+        drawer: "cubic-bezier(0.32, 0.72, 0, 1)",
+      },
+      keyframes: {
+        "pulse-ring": {
+          "0%": { transform: "scale(0.9)", opacity: "0.7" },
+          "70%": { transform: "scale(1.8)", opacity: "0" },
+          "100%": { transform: "scale(1.8)", opacity: "0" },
+        },
+      },
+      animation: {
+        "pulse-ring": "pulse-ring 2s cubic-bezier(0.23, 1, 0.32, 1) infinite",
       },
     },
   },

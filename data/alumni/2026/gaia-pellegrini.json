@@ -3,7 +3,7 @@
   "firstName": "Gaia",
   "lastName": "Pellegrini",
   "avatar": "https://picsum.photos/seed/gaia-pellegrini/400/400",
-  "tagline": "Turning data into discovery",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "National Taiwan University",
     "tutors": ["Jefferson Dionisio"],
     "pis": ["Che Lin"],
-    "lab": "Department of Life Science",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Bridging Morphology and Molecules: Adapting Pathology Foundation Models for Spatial Transcriptomics",
-    "summary": "During the fellowship at National Taiwan University, worked in the Department of Life Science under Yi-Ren Yeh on ML and DL, contributing to research that combines computer science with advanced computational methods.",
-    "topics": [
-      "ML",
-      "DL",
-      "Computer Vision"
-    ]
+    "projectAbstract": "Spatial Transcriptomics (ST) offers unprecedented insight into tissue biology, yet the data often suffers from sparsity and high cost. Conversely, Pathology Foundation Models (FMs) trained on massive histology datasets have demonstrated robust capabilities in learning tissue morphology. This project aims to bridge these modalities by investigating how pre-trained Pathology FMs can be leveraged to enhance ST analysis. The student will explore transfer learning strategies to align morphological context with molecular profiles, with the goal of improving performance on downstream prediction tasks."
   },
   "background": {
-    "homeUniversity": "Università di Brescia",
-    "degree": "MSc Computer Science"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Lab Manager",
-    "institution": "Armstrong Research Center",
-    "city": "Armstrong",
-    "country": "Canada"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "ML",
-      "DL",
-      "Computer Vision"
-    ],
-    "email": "gaia.pellegrini@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/gaia-pellegrini",
-    "github": "https://github.com/whiteladybug816",
-    "scholar": "https://scholar.google.com/citations?user=whiteladyb"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

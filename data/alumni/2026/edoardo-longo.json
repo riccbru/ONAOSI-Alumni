@@ -3,7 +3,7 @@
   "firstName": "Edoardo",
   "lastName": "Longo",
   "avatar": "https://picsum.photos/seed/edoardo-longo/400/400",
-  "tagline": "Learning something new every day",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "National Taiwan University",
     "tutors": ["Wei Yu Yang"],
     "pis": ["Chiara Labanti"],
-    "lab": "College of Medicine",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Optoelectronic characterization of organic photodetectors",
-    "summary": "During the fellowship at National Taiwan University, worked in the College of Medicine under Hao-Chuan Wang on Chemistry and Catalysis, contributing to research that combines applied physics with advanced computational methods.",
-    "topics": [
-      "Chemistry",
-      "Catalysis",
-      "Molecular Dynamics"
-    ]
+    "projectAbstract": "Organic photodetectors (OPDs) are an emerging category of optoelectronic devices to convert light (photon) information into an electronic signal, based on photoactive molecules which absorb light. Compared to traditional silicon-based devices, they offer several attractive features such as lightweight, biocompatibility, and easy tunability of absorption wavelength by chemical design of molecules, and they can be utilized in many key emerging applications such as biomedical sensors, environmental monitoring, and automatic driving devices. "
   },
   "background": {
-    "homeUniversity": "Università di Udine",
-    "degree": "MSc Applied Physics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Consultant",
-    "institution": "Trabzon Research Center",
-    "city": "Trabzon",
-    "country": "Turkey"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Chemistry",
-      "Catalysis",
-      "Molecular Dynamics"
-    ],
-    "email": "edoardo.longo@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/edoardo-longo",
-    "github": "https://github.com/smallpeacock215",
-    "scholar": "https://scholar.google.com/citations?user=smallpeaco"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

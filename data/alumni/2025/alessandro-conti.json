@@ -3,7 +3,7 @@
   "firstName": "Alessandro",
   "lastName": "Conti",
   "avatar": "https://picsum.photos/seed/alessandro-conti/400/400",
-  "tagline": "Curious about complex systems",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Andrew N. Groll"],
     "pis": ["Elena M. Zannon"],
-    "lab": "Ben May Department for Cancer Research",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Solid-state SPECT for Hyperspectral Imaging Applications",
-    "summary": "During the fellowship at University of Chicago, worked in the Ben May Department for Cancer Research under Marsha Rosner on Medical Imaging and CNN, contributing to research that combines data science with advanced computational methods.",
-    "topics": [
-      "Medical Imaging",
-      "CNN",
-      "Segmentation"
-    ]
+    "projectAbstract": "SPECT (Single-Photon Emission Computed Tomography) is a nuclear medicine imaging technique that uses a radioactive tracer to create 3D images of organs and tissues. By imaging the tracer distribution, SPECT can assess organ function, blood flow, and metabolic activity. This information is valuable for diagnosing various conditions, including heart disease, brain disorders, and cancer. With the appearance of new and challenging clinical applications in the era of radiotheranostics, personalized dosimetry, radiomics and artificial intelligence, SPECT imaging and instrumentation is experiencing a significant growth, a renewed interest, and a modernization push. By refining new collimator designs, hardware configurations and detector materials, the development of the next generation of SPECT instrumentation is currently underway. The student will specifically gain hands-on experience working on a research preclinical SPECT imaging system available at the Biological Sciences Division at UChicago. The system is a stationary SPECT scanner based on 24 high-energy solid-state detectors and coupled with an innovative and patented Compound-eye collimator. It is optimized to perform multi-isotope single-shot imaging studies for radiotheranostics applications."
   },
   "background": {
-    "homeUniversity": "Sapienza Università di Roma",
-    "degree": "MSc Data Science"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Research Scientist",
-    "institution": "Bendigo Research Center",
-    "city": "Bendigo",
-    "country": "Australia"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Medical Imaging",
-      "CNN",
-      "Segmentation"
-    ],
-    "email": "alessandro.conti@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/alessandro-conti",
-    "github": "https://github.com/greenbutterfly520",
-    "scholar": "https://scholar.google.com/citations?user=greenbutte"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

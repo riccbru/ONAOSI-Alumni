@@ -3,7 +3,7 @@
   "firstName": "Matteo",
   "lastName": "Gallo",
   "avatar": "https://picsum.photos/seed/matteo-gallo/400/400",
-  "tagline": "From theory to real-world impact",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Boris Epel"],
     "pis": ["Howard Halpern"],
-    "lab": "Department of Statistics",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Multi-Modality Imaging for Improving Radiotherapy in Hypoxic Tumors",
-    "summary": "During the fellowship at University of Chicago, worked in the Department of Statistics under Dan Nicolae on Cybersecurity and Cryptography, contributing to research that combines electrical engineering with advanced computational methods.",
-    "topics": [
-      "Cybersecurity",
-      "Cryptography",
-      "Networks"
-    ]
+    "projectAbstract": "Lack of oxygen referred to as hypoxia in living tissues, organs and organisms makes them resistant to radiation. This also makes them resistant to radiation therapy in the cure of cancer. Solid cancers, tumors, are complicated mixtures of well oxygenated and hypoxic regions through the chaotic growth of cancers. However, effective image-guided approaches to give more treatment or radiation dose to the resistant tumor regions have been lacking. Positron emission tomography (PET) scans injecting a small amount of radioactive hypoxia seeking tracer have promised to locate hypoxic regions, but therapy based on them has failed to improve outcomes. For example, a publication of the results from a Phase II clinical trial in France indicates that PET scans using 18F-misonidazole (FMISO) to define region-of-interest (ROI) for hypoxic tumor targeting was shown to fail in improving tumor control and treatment outcome."
   },
   "background": {
-    "homeUniversity": "Università di Pisa",
-    "degree": "MSc Electrical Engineering"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Software Engineer",
-    "institution": "Olden Research Center",
-    "city": "Olden",
-    "country": "Norway"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "Cybersecurity",
-      "Cryptography",
-      "Networks"
-    ],
-    "email": "matteo.gallo@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/matteo-gallo",
-    "github": "https://github.com/tinylion100",
-    "scholar": "https://scholar.google.com/citations?user=tinylion10"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

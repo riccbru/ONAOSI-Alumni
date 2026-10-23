@@ -3,7 +3,7 @@
   "firstName": "Gaetano",
   "lastName": "d'Antonio",
   "avatar": "https://picsum.photos/seed/gaetano-dantonio/400/400",
-  "tagline": "Exploring the frontiers of AI",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Anitha Govind"],
     "pis": ["William Grenn"],
-    "lab": "Department of Neurobiology",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Multi-Modality Imaging of Nicotine Addiction and Smoking Cessation",
-    "summary": "During the fellowship at University of Chicago, worked in the Department of Neurobiology under David Freedman on Quantum Computing and Physics, contributing to research that combines physics with advanced computational methods.",
-    "topics": [
-      "Quantum Computing",
-      "Physics",
-      "Simulation"
-    ]
+    "projectAbstract": "Tobacco continues to be widely used world-wide, primarily via cigarette smoking, and is the leading cause of preventable deaths in the United States. Tobacco use is driven by nicotine addiction, which starts by nicotine binding to high-affinity nicotine binding sites in brain. 80-90% of the high-affinity sites are located on α4β2-type nicotinic acetylcholine receptors (α4β2Rs). Prolonged nicotine exposure increases high-affinity α4β2R binding sites in brain, a process termed “upregulation”, linked to craving and withdrawal in nicotine addiction. This project is based on our discovery that α4β2R ligands that are weak bases, such as the smoking cessation reagent varenicline (Chantix), can be selectively trapped in α4β2R-containing acidic vesicles of cells and neurons. Slow release of trapped varenicline reduces the effects of nicotine upregulation. Selective trapping is further regulated by nicotine upregulation, which increases the numbers of α4β2R-containing acidic vesicles. Nicotine, also a weak base, is not trapped because its ligand pKa and affinity for α4β2Rs is lower than that of varenicline. We also discovered the identity of the α4β2R-containing intracellular acidic vesicles that cause trapping. The vesicles are a novel organelle, called “Golgi satellites” (GSats). These results provide a new paradigm for how varenicline causes smoking cessation. Like varenicline and nicotine, different α4β2R PET probes have different ligand pKas and affinities for α4β2Rs, which explains differences in kinetics, displaceable binding by varenicline and nicotine, non-displaceable binding and metabolism. While a number of studies have used PET probes specific for α4β2R high-affinity binding sites in brain, these studies are complicated by the interpretations of the binding and binding kinetics especially when nicotine and/or varenicline are present. There is the potential of wider application of the PET methods that will be developed in this application, since for α4β2R PET imaging is currently underway in a number of brain disorders. The goals of this proposal are to examine mechanisms underlying upregulation and nicotine addiction by: 1) Investigating in vivo α4β2R PET imaging of nicotine upregulation comparing intermittent and sustained nicotine exposure in mice; 2) correlating results in Aim 1 with subcellular changes with nicotine upregulation correlating nicotine upregulation with ex vivo methods to assay α4β2Rs-containing GSats in neurons; and 3) assessing effects of in vivo cytisine and varenicline exposure on nicotine upregulation and direct measurements of varenicline trapping in vivo."
   },
   "background": {
-    "homeUniversity": "Università di Parma",
-    "degree": "MSc Physics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Lab Manager",
-    "institution": "Montreuil Research Center",
-    "city": "Montreuil",
-    "country": "France"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Quantum Computing",
-      "Physics",
-      "Simulation"
-    ],
-    "email": "gaetano.dantonio@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/gaetano-dantonio",
-    "github": "https://github.com/sadbutterfly394",
-    "scholar": "https://scholar.google.com/citations?user=sadbutterf"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

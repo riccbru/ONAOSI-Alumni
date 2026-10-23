@@ -3,7 +3,7 @@
   "firstName": "Chiara",
   "lastName": "Bianchi",
   "avatar": "https://picsum.photos/seed/chiara-bianchi/400/400",
-  "tagline": "Making research reproducible",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Mythra Varun Nemallapudi"],
     "pis": ["Chin-Tu Chen"],
-    "lab": "Booth School of Business",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Quantitative PET Imaging for Investigation of Brain and Behavioral Disorders",
-    "summary": "During the fellowship at University of Chicago, worked in the Booth School of Business under Veronika Rockova on Statistics and Causal Inference, contributing to research that combines mathematics with advanced computational methods.",
-    "topics": [
-      "Statistics",
-      "Causal Inference",
-      "Bayesian"
-    ]
+    "projectAbstract": "Positron emission tomography (PET) is a molecular and nuclear medicine imaging modality that offers relatively high degree of quantitative accuracy and reliability in assessing brain and behavior related function, physiology, and disorders. Our laboratories conduct brain PET imaging research includes designing and developing novel application-specific PET imaging instruments, related quantitative imaging processing, reconstruction and analysis methods and tools, various PET neuroimaging radiopharmaceuticals, applying these PET imaging methodologies to important brain and behavioral sciences and their disorders. In recent years, we have been investigating addiction biology especially those related to nicotine effects and smoking cessation, and opioids and pain control, and Alzheimer’s disease and related dementia (ADRD), and the interplay of addictions and ADRD."
   },
   "background": {
-    "homeUniversity": "Università degli Studi di Firenze",
-    "degree": "MSc Mathematics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Consultant",
-    "institution": "Dijon Research Center",
-    "city": "Dijon",
-    "country": "France"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Statistics",
-      "Causal Inference",
-      "Bayesian"
-    ],
-    "email": "chiara.bianchi@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/chiara-bianchi",
-    "github": "https://github.com/bigdog587",
-    "scholar": "https://scholar.google.com/citations?user=bigdog587"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

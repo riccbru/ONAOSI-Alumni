@@ -3,7 +3,7 @@
   "firstName": "Elena",
   "lastName": "Rizzo",
   "avatar": "https://picsum.photos/seed/elena-rizzo/400/400",
-  "tagline": "Designing the next generation of devices",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2025,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Hee-Jong Kim"],
     "pis": ["Chien-Min Kao"],
-    "lab": "Institute for Biophysical Dynamics",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Characterizing a hybrid small-animal (preclinical) PET/EPRI scanner",
-    "summary": "During the fellowship at University of Chicago, worked in the Institute for Biophysical Dynamics under Allison Squires on Materials and Nanotech, contributing to research that combines chemistry with advanced computational methods.",
-    "topics": [
-      "Materials",
-      "Nanotech",
-      "Spectroscopy"
-    ]
+    "projectAbstract": "Positron emission tomography (PET) is a computational imaging technology, meaning that the image it produces is computed from the acquired data in accordance with a mathematic equation that describes the physics and statistics of the imaging process. As a result, the performance of a PET system depends not only on the properties of the detectors but also on how they are assembled into system (affecting the mathematic model) and how their data are “reconstructed” to produce image (how to mathematic model is solved). In Kao’s lab at UChicago, we have recently developed a unique small-animal imaging system that integrates a PET system with an electron paramagnetic resonance imaging (EPRI) system. This system is to be used, in conjunction with animal models of disease, for studying PET-based hypoxia imaging methods, which can be implemented in the clinic, validated against EPRI oxygen imaging, which has demonstrated quantitative accuracy but is presently not available in the clinic. Hypoxia imaging is of importance because it is well known that hypoxic cancer cells are more resistant to various therapeutics including radiation. Therefore, boosting radiation dose to the hypoxic tumor regions may improve tumor control but this idea has yet to be firmly demonstrated in the clinic. To a major part, this situation is due to the lack of a quantitatively accurate clinical hypoxia imaging technique."
   },
   "background": {
-    "homeUniversity": "Università di Trento",
-    "degree": "MSc Chemistry"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Research Associate",
-    "institution": "Forssa Research Center",
-    "city": "Forssa",
-    "country": "Finland"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "Materials",
-      "Nanotech",
-      "Spectroscopy"
-    ],
-    "email": "elena.rizzo@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/elena-rizzo",
-    "github": "https://github.com/bigwolf519",
-    "scholar": "https://scholar.google.com/citations?user=bigwolf519"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

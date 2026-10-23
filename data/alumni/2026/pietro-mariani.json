@@ -3,43 +3,34 @@
   "firstName": "Pietro",
   "lastName": "Mariani",
   "avatar": "https://picsum.photos/seed/pietro-mariani/400/400",
-  "tagline": "Designing the next generation of devices",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Taipei",
     "hostInstitution": "National Taiwan University",
-    "tutors": [],
+    "tutors": [""],
     "pis": ["Yi-Chun Chin"],
-    "lab": "Graduate Institute of Biomedical Electronics and Bioinformatics",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Advanced perovskite material in photodetectors",
-    "summary": "During the fellowship at National Taiwan University, worked in the Graduate Institute of Biomedical Electronics and Bioinformatics under Yung-Yu Chuang on Materials and Nanotech, contributing to research that combines chemistry with advanced computational methods.",
-    "topics": [
-      "Materials",
-      "Nanotech",
-      "Spectroscopy"
-    ]
+    "projectAbstract": "Halide perovskite has shown multiple superior properties, such as long charge carrier lifetime, defect tolerance and efficient photon-electron conversion, and therefore it has been a promising material in optoelectronics. My research team is focusing on utilizing this type of material in realizing photodetectors, particularly in broadband sensing applications, which is highly valuable for bio sensing and wearable electronics. The main research task is to optimize the integration of the material I photodiode devices to enhance the performance and device lifetime. The research program will be teamed up with my other local master students to solve the critical scientific challenges."
   },
   "background": {
-    "homeUniversity": "Università di Modena e Reggio Emilia",
-    "degree": "MSc Chemistry"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Machine Learning Engineer",
-    "institution": "Porirua Research Center",
-    "city": "Porirua",
-    "country": "New Zealand"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Materials",
-      "Nanotech",
-      "Spectroscopy"
-    ],
-    "email": "pietro.mariani@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/pietro-mariani",
-    "github": "https://github.com/whitebird818",
-    "scholar": "https://scholar.google.com/citations?user=whitebird8"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

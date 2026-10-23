@@ -3,43 +3,34 @@
   "firstName": "Niccolò",
   "lastName": "Agnelli",
   "avatar": "https://picsum.photos/seed/niccolo-agnelli/400/400",
-  "tagline": "Where physics meets machine learning",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Chicago",
     "hostInstitution": "University of Chicago",
     "tutors": ["Chien-Min Kao"],
-    "pis": ["Heejong Kim"],
-    "lab": "Michelson Center for Physics",
+    "pis": ["Hee-Jong Kim"],
+    "lab": "Biological Science Division (BSD)",
+    "topics": ["topic"],
     "projectTitle": "Performance characterization of PET detectors and systems",
-    "summary": "During the fellowship at University of Chicago, worked in the Michelson Center for Physics under Rebecca Willett on Climate and Remote Sensing, contributing to research that combines statistics with advanced computational methods.",
-    "topics": [
-      "Climate",
-      "Remote Sensing",
-      "GIS"
-    ]
+    "projectAbstract": "Positron emission tomography (PET) is a major molecular imaging modality that plays a key role at the forefront of medicine. Complementary to anatomical imaging by x-ray and magnetic resonance imaging (MRI), PET allows doctors and researchers to examine functions such as metabolism, gene expression, cell proliferation, and drug uptake in a subject. It is useful for studying and diagnosing cancer and neurodegenerative diseases that are fundamentally functional disorders. In this project, through hands-on experiments on PET detectors and systems that have been developed or are under development in Kao’s lab at UChicago, the students will be exposed to the concept and practice of molecular imaging, and learn the basic physical principle, electronics of PET detector, and other performance and practical considerations for PET."
   },
   "background": {
-    "homeUniversity": "Università degli Studi di Milano",
-    "degree": "MSc Statistics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "PhD Candidate",
-    "institution": "Dzhankoy Research Center",
-    "city": "Dzhankoy",
-    "country": "Ukraine"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "Climate",
-      "Remote Sensing",
-      "GIS"
-    ],
-    "email": "niccolo.agnelli@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/niccolo-agnelli",
-    "github": "https://github.com/browntiger421",
-    "scholar": "https://scholar.google.com/citations?user=browntiger"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

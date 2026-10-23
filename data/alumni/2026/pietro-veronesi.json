@@ -3,7 +3,7 @@
   "firstName": "Pietro",
   "lastName": "Veronesi",
   "avatar": "https://picsum.photos/seed/pietro-veronesi/400/400",
-  "tagline": "Connecting people and ideas",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Riccardo Lispi"],
     "pis": ["Alfredo Garcia"],
-    "lab": "Ben May Department for Cancer Research",
+    "lab": "Biological Science Division",
+    "topics": ["topic"],
     "projectTitle": "Mechanistic Consequences of Fentanyl-Induced Hypoxia and Cardiorespiratory Collapse",
-    "summary": "During the fellowship at University of Chicago, worked in the Ben May Department for Cancer Research under Marsha Rosner on Biophysics and Microscopy, contributing to research that combines robotics and automation with advanced computational methods.",
-    "topics": [
-      "Biophysics",
-      "Microscopy",
-      "Imaging"
-    ]
+    "projectAbstract": "Acute exposure to ultrapotent synthetic opioids (UPSO), such as fentanyl, represents a significant public health concern. In the ongoing opioid epidemic, it is estimated that UPSO exposure contributes to over 80% of overdose-related deaths. The current defense strategy against UPSO exposure has been the development of reversal agents, such as naloxone, that aim to effectively reverse opioid-induced respiratory depression and related secondary complications with breathing. However, the high potency of UPSO decreases the window of time in which a counteragent can be administered before UPSO-dependent cardiorespiratory collapse (CRC) occurs and immediate resuscitative action is required. Optimal strategies for resuscitation following UPSO-dependent CRC are unknown. Resuscitation increases the risk for hypoxic-ischemic reperfusion injury (HIRI), which can lead to additional morbidity and death despite reversal of the opioid-mediated effects on breathing. Critical knowledge gaps exist in understanding how UPSO exposure impacts post-resuscitative outcomes in vital organ systems such as the heart, lungs, and brain. These gaps are a significant roadblock to successfully minimizing the morbidities and mortalities associated with UPSO exposure. Project objective is to establish a foundational understanding of the cellular and systemic outcomes after reversing fentanyl-induced CRC (fiCRC). We have developed a novel model of fiCRC where we observe pulmonary edema following naloxone administration and reversal of respiratory depression, closely modeling documented clinical observations. Central Hypothesis: Factors beyond respiratory depression contribute to the progression of fentanyl overdose, leading to injury following the reversal of fiCRC; these factors are tractable targets in minimizing injury due to fentanyl overdose and its reversal."
   },
   "background": {
-    "homeUniversity": "Università di Trieste",
-    "degree": "MSc Robotics and Automation"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Research Scientist",
-    "institution": "Ignacio Zaragoza Research Center",
-    "city": "Ignacio Zaragoza",
-    "country": "Mexico"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Biophysics",
-      "Microscopy",
-      "Imaging"
-    ],
-    "email": "pietro.veronesi@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/pietro-veronesi",
-    "github": "https://github.com/purplegorilla512",
-    "scholar": "https://scholar.google.com/citations?user=purplegori"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

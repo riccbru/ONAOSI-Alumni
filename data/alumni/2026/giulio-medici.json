@@ -3,7 +3,7 @@
   "firstName": "Giulio",
   "lastName": "Medici",
   "avatar": "https://picsum.photos/seed/giulio-medici/400/400",
-  "tagline": "Building tools for better science",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Chien-Min Kao"],
     "pis": ["Yinjie Wang"],
-    "lab": "Booth School of Business",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Positronium Lifetime Imaging (PLI)",
-    "summary": "During the fellowship at University of Chicago, worked in the Booth School of Business under Veronika Rockova on NLP and Transformers, contributing to research that combines biomedical engineering with advanced computational methods.",
-    "topics": [
-      "NLP",
-      "Transformers",
-      "LLM"
-    ]
+    "projectAbstract": "Positronium lifetime imaging (PLI) is an emerging technology that can expand the capability of positron emission tomography (PET) to yield additional diagnostic information for disease. In the conventional PET, the uptake of PET molecules gives diagnostic information for disease. For example, cancer diagnosis is often based on the abnormal update of a PET trace called FDG, which is 18F labeled glucose analog. PLI is based on the fact that before annihilation about 40% of the positrons released by PET molecules form a meta-stable particle with electrons, known as positronium. There are two types of positroniums. One of them, called orthopositronium, has a 142ns long lifetime in vacuum, lending it an opportunity to interact with nearby molecules in tissue to annihilate promptly. As a result, in tissue its lifetime is significantly shortened to 1-5ns and the value depends on the properties of the local environment. In PLI, researchers aim to obtain the spatial distribution of positronium lifetime, hypothesizing that this map can reflect properties of the microenvironment that can provide diagnostic information for disease, in addition to that given by PET update. PLI is new. Methods for reconstructing PLI images are under development."
   },
   "background": {
-    "homeUniversity": "Università di Catania",
-    "degree": "MSc Biomedical Engineering"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Consultant",
-    "institution": "Sikar Research Center",
-    "city": "Sikar",
-    "country": "India"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "NLP",
-      "Transformers",
-      "LLM"
-    ],
-    "email": "giulio.medici@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/giulio-medici",
-    "github": "https://github.com/blackostrich493",
-    "scholar": "https://scholar.google.com/citations?user=blackostri"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

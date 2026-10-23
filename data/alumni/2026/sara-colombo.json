@@ -3,43 +3,34 @@
   "firstName": "Sara",
   "lastName": "Colombo",
   "avatar": "https://picsum.photos/seed/sara-colombo/400/400",
-  "tagline": "From theory to real-world impact",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Taipei",
     "hostInstitution": "National Taiwan University",
-    "tutors": [],
+    "tutors": [""],
     "pis": ["Fei-Man Hsu"],
-    "lab": "Graduate Institute of Networking and Multimedia",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Epigenomic Memory and Scalable Software Tools for Large-Scale DNA Methylation Profiling",
-    "summary": "During the fellowship at National Taiwan University, worked in the Graduate Institute of Networking and Multimedia under Wen-Huang Cheng on Cybersecurity and Cryptography, contributing to research that combines electrical engineering with advanced computational methods.",
-    "topics": [
-      "Cybersecurity",
-      "Cryptography",
-      "Networks"
-    ]
+    "projectAbstract": "Our newly established lab at NTU SMART-MHI focuses on computational medicine and bioinformatics. We are particularly interested in epigenomic memory e.g. how a patient’s DNA methylation profile (methylome) reflects past exposures and helps project future disease trajectories. Our research has two main directions: 1) Epigenomic memory and disease prediction: We analyze large-scale DNA methylation data to understand how epigenetic patterns are associated with disease risk, progression, and clinical outcomes, and to build interpretable models for disease trajectory prediction; 2) Software tools for large-scale DNA methylation profiling: We develop eTicient, scalable algorithms and open-source software to process, profile, and interpret high-throughput DNA methylation data, with an emphasis on clinical and translational applications (e.g., risk stratification, prognosis, and treatment response)."
   },
   "background": {
-    "homeUniversity": "Università Politecnica delle Marche",
-    "degree": "MSc Electrical Engineering"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "PhD Candidate",
-    "institution": "Rusko Research Center",
-    "city": "Rusko",
-    "country": "Finland"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Cybersecurity",
-      "Cryptography",
-      "Networks"
-    ],
-    "email": "sara.colombo@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/sara-colombo",
-    "github": "https://github.com/smalltiger705",
-    "scholar": "https://scholar.google.com/citations?user=smalltiger"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

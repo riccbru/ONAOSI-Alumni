@@ -3,7 +3,7 @@
   "firstName": "Alessandro",
   "lastName": "Festa",
   "avatar": "https://picsum.photos/seed/alessandro-festa/400/400",
-  "tagline": "Bridging engineering and medicine",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
@@ -11,35 +11,26 @@
     "hostInstitution": "University of Chicago",
     "tutors": ["Renu Rajamagesh"],
     "pis": ["Elena M. Zannoni"],
-    "lab": "Kavli Institute for Cosmological Physics",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Solid-State SPECT for Radiotheranostics Applications",
-    "summary": "During the fellowship at University of Chicago, worked in the Kavli Institute for Cosmological Physics under Daniel Holz on Genomics and Bioinformatics, contributing to research that combines cybersecurity with advanced computational methods.",
-    "topics": [
-      "Genomics",
-      "Bioinformatics",
-      "NGS"
-    ]
+    "projectAbstract": "SPECT (Single-Photon Emission Computed Tomography) is a nuclear medicine imaging technique that uses a radioactive tracer to create 3D images of organs and tissues. By imaging the tracer distribution, SPECT can assess organ function, blood flow, and metabolic activity. This information is valuable for diagnosing various conditions, including heart disease, brain disorders, and cancer. With the appearance of new and challenging imaging applications in the era of radiotheranostics, personalized dosimetry, radiomics and artificial intelligence, SPECT imaging and instrumentation is experiencing a significant growth, a renewed interest, and a modernization push. By refining new hardware configurations and detector materials, the development of the next generation of SPECT instrumentation is currently underway. The student will specifically gain hands-on experience working on a research preclinical SPECT imaging system available at the Biological Sciences Division at UChicago. The system is a stationary SPECT scanner based on 24 high-energy solid-state detectors and coupled with an innovative and patented collimator. It is optimized to perform multi-isotope imaging studies for radiotheranostics applications."
   },
   "background": {
-    "homeUniversity": "Università di Pavia",
-    "degree": "MSc Cybersecurity"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "R&D Engineer",
-    "institution": "Isparta Research Center",
-    "city": "Isparta",
-    "country": "Turkey"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Genomics",
-      "Bioinformatics",
-      "NGS"
-    ],
-    "email": "alice.festa@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/alessandro-festa",
-    "github": "https://github.com/bluemouse851",
-    "scholar": "https://scholar.google.com/citations?user=bluemouse8"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

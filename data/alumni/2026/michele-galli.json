@@ -3,43 +3,34 @@
   "firstName": "Michele",
   "lastName": "Galli",
   "avatar": "https://picsum.photos/seed/michele-galli/400/400",
-  "tagline": "Making research reproducible",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Taipei",
     "hostInstitution": "National Taiwan University",
-    "tutors": [],
+    "tutors": [""],
     "pis": ["Nguyen Tuan Hung"],
-    "lab": "Department of Electrical Engineering",
+    "lab": "Department of Materials Science and Engineering",
+    "topics": ["topic"],
     "projectTitle": "AI-assisted first-principles design of next-generation semiconductors and energy materials",
-    "summary": "During the fellowship at National Taiwan University, worked in the Department of Electrical Engineering under Li-Chen Fu on Statistics and Causal Inference, contributing to research that combines mathematics with advanced computational methods.",
-    "topics": [
-      "Statistics",
-      "Causal Inference",
-      "Bayesian"
-    ]
+    "projectAbstract": "The proposed research will be conducted in the Interdisciplinary Materials Group, established in August 2025 in the Department of Materials Science and Eng ineering at NTU. The group applies advanced solid-state theory, density functional theory (DFT), artificial intelligence, and large-scale computation to explore new physics and functionalities in energy and quantum materials. The group has produced high-impact publications in leading journals and developed open-source scientific software, including QERaman, GNNOpt, and SCIGEN. This project focuses on AI-assisted first-principles design of next-generation semiconductors and energy materials, with particular emphasis on photovoltaics, thermoelectrics, and quantum materials. The goal is to combine high-throughput DFT calculations with machine learning models to predict and understand structure–property relationships governing energy transport and crystal structure. The project consists of two phases: 1) Training Phase: Students will receive intensive training in solid-state physics fundamentals, DFT simulations using Quantum ESPRESSO on high-performance computing systems, Pythonbased data analysis, materials data preprocessing, and supervised machine learning methods suchas Random Forest, XGBoost, and neural networks; 2) Research Phase: Students will perform hands-on research including high-throughput DFT simulations, machine learning model development for predicting material properties, validation against first-principles calculations, and preparation of a draft research manuscript. Weekly discussions will be conducted in a highly international research environment."
   },
   "background": {
-    "homeUniversity": "Università di Siena",
-    "degree": "MSc Mathematics"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Postdoctoral Researcher",
-    "institution": "Helsinki Research Center",
-    "city": "Helsinki",
-    "country": "Finland"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
     "openToChat": true,
-    "askMeAbout": [
-      "Statistics",
-      "Causal Inference",
-      "Bayesian"
-    ],
-    "email": "michele.galli@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/michele-galli",
-    "github": "https://github.com/smallsnake550",
-    "scholar": "https://scholar.google.com/citations?user=smallsnake"
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }

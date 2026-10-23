@@ -3,43 +3,34 @@
   "firstName": "Alessia",
   "lastName": "Ferrara",
   "avatar": "https://picsum.photos/seed/alessia-ferrara/400/400",
-  "tagline": "Decoding biology with computation",
+  "tagline": "tagline",
   "fellowship": {
     "cohort": 2026,
     "isTeamLeader": false,
     "destination": "Taipei",
     "hostInstitution": "National Taiwan University",
-    "tutors": [],
+    "tutors": ["tutor"],
     "pis": ["Mei-Ju May Chen"],
-    "lab": "Institute of Applied Mechanics",
+    "lab": "lab",
+    "topics": ["topic"],
     "projectTitle": "Open-Source Computational Frameworks for Multi-Omics Analysis of Tumor Heterogeneity and Epigenetic Alterations",
-    "summary": "During the fellowship at National Taiwan University, worked in the Institute of Applied Mechanics under Jyh-Shing Roger Jang on Neuroscience and fMRI, contributing to research that combines neuroscience with advanced computational methods.",
-    "topics": [
-      "Neuroscience",
-      "fMRI",
-      "Connectomics"
-    ]
+    "projectAbstract": "The Computational Multidata Junction in Medicine (CMJM) Lab led by Prof. Mei-Ju May Chen focuses on computational multi-omics data analysis, and AI-enabled multi-omics integration to address fundamental and translational questions in precision medicine, with a particular emphasis on cancer and public health. The proposed research theme centers on the development and application of open-source computational frameworks, QuoTHiC, Oncolabe, and methLOY (A machine learning project for predicting LOY status from EPIC array data), in collaboration with the German Cancer Research Center (DKFZ) for systematic analysis of tumor heterogeneity and epigenetic alterations from large-scale bulk or single-cell sequencing data."
   },
   "background": {
-    "homeUniversity": "Università di Bergamo",
-    "degree": "MSc Neuroscience"
+    "homeUniversity": "university",
+    "degree": "degree"
   },
   "currentStatus": {
-    "role": "Research Scientist",
-    "institution": "Nurmes Research Center",
-    "city": "Nurmes",
-    "country": "Finland"
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
   },
   "networking": {
-    "openToChat": false,
-    "askMeAbout": [
-      "Neuroscience",
-      "fMRI",
-      "Connectomics"
-    ],
-    "email": "alessia.ferrara@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/alessia-ferrara",
-    "github": "https://github.com/orangegorilla533",
-    "scholar": "https://scholar.google.com/citations?user=orangegori"
+    "openToChat": true,
+    "email": "email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "scholar": "Google Scholar"
   }
 }
