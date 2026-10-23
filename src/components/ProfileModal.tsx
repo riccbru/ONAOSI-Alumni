@@ -22,7 +22,8 @@ function isLink(v?: string | null): v is string {
   return !!v && /^(https?:|mailto:)/.test(v.trim());
 }
 
-function Row({
+/** Pilastro informativo centrato (Formazione / Ricerca / Occupazione). */
+function Pillar({
   icon,
   label,
   children,
@@ -32,14 +33,12 @@ function Row({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex gap-3">
-      <span className="mt-0.5 text-primary-500">{icon}</span>
-      <div className="min-w-0">
-        <div className="text-[11px] font-semibold uppercase tracking-wide text-text-secondary">
-          {label}
-        </div>
-        <div className="text-sm text-text">{children}</div>
+    <div className="flex flex-1 basis-0 flex-col items-center gap-1.5 text-center">
+      <span className="text-primary-500">{icon}</span>
+      <div className="text-[11px] font-semibold uppercase tracking-wide text-text-secondary">
+        {label}
       </div>
+      <div className="text-sm text-text">{children}</div>
     </div>
   );
 }
@@ -218,30 +217,30 @@ function ProfileModalContent({
             </div>
           )}
 
-          <div className="mt-6 grid gap-4 border-t border-border/70 pt-5 sm:grid-cols-2">
-            <Row icon={<GraduationIcon className="h-[18px] w-[18px]" />} label="Formazione">
+          <div className="mt-6 flex items-start justify-evenly gap-4 border-t border-border/70 pt-5">
+            <Pillar icon={<GraduationIcon className="h-5 w-5" />} label="Formazione">
               {b.homeUniversity}
               <span className="block text-text-secondary">{b.degree}</span>
-            </Row>
+            </Pillar>
 
-            <Row icon={<BriefcaseIcon className="h-[18px] w-[18px]" />} label="Ricerca">
+            <Pillar icon={<BriefcaseIcon className="h-5 w-5" />} label="Ricerca">
               {f.hostInstitution}
               {(f.lab || f.department) && (
                 <span className="block text-text-secondary">
                   {[f.lab, f.department].filter(Boolean).join(" · ")}
                 </span>
               )}
-            </Row>
+            </Pillar>
 
             {(cs.role || cs.institution) && (
-              <Row icon={<BuildingIcon className="h-[18px] w-[18px]" />} label="Occupazione">
+              <Pillar icon={<BuildingIcon className="h-5 w-5" />} label="Occupazione">
                 {[cs.role, cs.institution].filter(Boolean).join(" @ ")}
                 {(cs.city || cs.country) && (
                   <span className="block text-text-secondary">
                     {[cs.city, cs.country].filter(Boolean).join(", ")}
                   </span>
                 )}
-              </Row>
+              </Pillar>
             )}
           </div>
 

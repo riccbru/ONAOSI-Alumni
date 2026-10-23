@@ -110,14 +110,13 @@ export function AccordionItem({
           : "border-border hover:border-primary-200"
       }`}
     >
-      <div className="flex items-start gap-2 p-4 sm:gap-3 sm:p-5">
-        <h3 className="min-w-0 flex-1">
+      <h3>
         <button
           type="button"
           onClick={onToggle}
           aria-expanded={isOpen}
           aria-controls={bodyId}
-          className="press flex w-full items-start gap-3 text-left sm:gap-4"
+          className="press flex w-full items-start gap-3 p-4 text-left sm:gap-4 sm:p-5"
         >
           <div className="relative shrink-0">
             <Avatar
@@ -175,20 +174,7 @@ export function AccordionItem({
             <ChevronDown />
           </motion.span>
         </button>
-        </h3>
-
-        {profileModal && (
-          <button
-            type="button"
-            onClick={() => profileModal.openProfile(alumnus)}
-            aria-label="Apri scheda completa"
-            title="Apri scheda completa"
-            className="press mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-neutral-0 text-text-secondary transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
-          >
-            <ExpandIcon className="h-[18px] w-[18px]" />
-          </button>
-        )}
-      </div>
+      </h3>
 
       <AnimatePresence initial={false}>
         {isOpen && (
@@ -206,6 +192,21 @@ export function AccordionItem({
             className="overflow-hidden"
           >
             <div className="border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
+              {/* Apre la scheda completa nel modale (lettura immersiva +
+                  link condivisibile). */}
+              {profileModal && (
+                <div className="mb-3 flex justify-end">
+                  <button
+                    type="button"
+                    onClick={() => profileModal.openProfile(alumnus)}
+                    className="press inline-flex items-center gap-1.5 rounded-lg border border-border bg-neutral-0 px-3 py-1.5 text-xs font-semibold text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
+                  >
+                    <ExpandIcon className="h-4 w-4" />
+                    Apri scheda completa
+                  </button>
+                </div>
+              )}
+
               {/* Abstract: ogni riga vuota (\n\n nel JSON) separa un paragrafo;
                   i singoli \n diventano a-capo grazie a whitespace-pre-line. */}
               {abstractParagraphs.length > 0 && (
