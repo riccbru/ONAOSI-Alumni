@@ -2,13 +2,14 @@ import type { GetServerSideProps } from "next";
 import { AlumniExplorer } from "@/components/AlumniExplorer";
 import type { ViewMode } from "@/components/ViewToggle";
 import { getAllAlumni } from "@/lib/alumni";
+import { alumnusId } from "@/lib/filters";
 import type { Alumnus, Destination } from "@/types/alumni";
 
 type Props = {
   alumni: Alumnus[];
   initialView: ViewMode;
   initialCity: Destination | null;
-  initialAlumnusSlug: string | null;
+  initialAlumnusId: string | null;
 };
 
 /**
@@ -20,14 +21,14 @@ export default function HomePage({
   alumni,
   initialView,
   initialCity,
-  initialAlumnusSlug,
+  initialAlumnusId,
 }: Props) {
   return (
     <AlumniExplorer
       alumni={alumni}
       initialView={initialView}
       initialCity={initialCity}
-      initialAlumnusSlug={initialAlumnusSlug}
+      initialAlumnusId={initialAlumnusId}
     />
   );
 }
@@ -35,7 +36,7 @@ export default function HomePage({
 export const getServerSideProps: GetServerSideProps<Props> = async ({ query }) => {
   const alumni = getAllAlumni();
   const destinations = new Set(alumni.map((a) => a.fellowship.destination));
-  const slugs = new Set(alumni.map((a) => a.slug));
+  const ids = new Set(alumni.map(alumnusId));
 
   const initialView: ViewMode = query.view === "map" ? "map" : "list";
 
@@ -46,7 +47,7 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ query }) =
       : null;
 
   const rawAlumnus = Array.isArray(query.alumnus) ? query.alumnus[0] : query.alumnus;
-  const initialAlumnusSlug = rawAlumnus && slugs.has(rawAlumnus) ? rawAlumnus : null;
+  const initialAlumnusId = rawAlumnus && ids.has(rawAlumnus) ? rawAlumnus : null;
 
-  return { props: { alumni, initialView, initialCity, initialAlumnusSlug } };
+  return { props: { alumni, initialView, initialCity, initialAlumnusId } };
 };

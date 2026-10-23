@@ -11,6 +11,7 @@ import { ListView } from "./ListView";
 import { ProfileModal } from "./ProfileModal";
 import { ProfileModalProvider } from "./ProfileModalContext";
 import type { ViewMode } from "./ViewToggle";
+import { alumnusId } from "@/lib/filters";
 
 // Il globo è pesante (WebGL): niente SSR, caricato alla bisogna. Durante il
 // download del chunk mostriamo lo skeleton del mappamondo.
@@ -25,43 +26,44 @@ export function AlumniExplorer({
   alumni,
   initialView = "list",
   initialCity = null,
-  initialAlumnusSlug = null,
+  initialAlumnusId = null,
 }: {
   alumni: Alumnus[];
   // Stato iniziale deciso dal server (dai query param): evita il flash al
   // refresh perché l'HTML arriva già con la vista corretta.
   initialView?: ViewMode;
   initialCity?: Destination | null;
-  initialAlumnusSlug?: string | null;
+  initialAlumnusId?: string | null;
 }) {
   // Il globo 3D viene montato (e il suo contesto WebGL creato) solo quando si
   // è in vista mappa.
   const [view, setView] = useState<ViewMode>(initialView);
   const [selected, setSelected] = useState<Destination | null>(initialCity);
-  // Slug del profilo aperto nel modale (null ⇒ chiuso). Deep-linkabile.
-  const [profileSlug, setProfileSlug] = useState<string | null>(initialAlumnusSlug);
+  // Id del record aperto nel modale (null ⇒ chiuso). Deep-linkabile. Usiamo
+  // alumnusId (non lo slug) perché la stessa persona può avere più record.
+  const [profileId, setProfileId] = useState<string | null>(initialAlumnusId);
 
-  const bySlug = useMemo(
-    () => new Map(alumni.map((a) => [a.slug, a])),
+  const byId = useMemo(
+    () => new Map(alumni.map((a) => [alumnusId(a), a])),
     [alumni],
   );
-  const profile = profileSlug ? bySlug.get(profileSlug) ?? null : null;
+  const profile = profileId ? byId.get(profileId) ?? null : null;
 
   // Sincronizzazione stato → URL (replaceState: niente nuove voci di history).
   useEffect(() => {
     const params = new URLSearchParams();
     if (view !== "list") params.set("view", view);
     if (selected) params.set("city", selected);
-    if (profileSlug) params.set("alumnus", profileSlug);
+    if (profileId) params.set("alumnus", profileId);
     const qs = params.toString();
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [view, selected, profileSlug]);
+  }, [view, selected, profileId]);
 
   const handleSelect = useCallback((d: Destination) => setSelected(d), []);
   const closeDrawer = useCallback(() => setSelected(null), []);
 
-  const openProfile = useCallback((a: Alumnus) => setProfileSlug(a.slug), []);
-  const closeProfile = useCallback(() => setProfileSlug(null), []);
+  const openProfile = useCallback((a: Alumnus) => setProfileId(alumnusId(a)), []);
+  const closeProfile = useCallback(() => setProfileId(null), []);
   const profileModal = useMemo(() => ({ openProfile }), [openProfile]);
 
   const isMap = view === "map";

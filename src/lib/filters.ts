@@ -9,6 +9,17 @@ export function fullName(a: Alumnus): string {
 }
 
 /**
+ * Identificatore univoco di un RECORD alumnus. Lo `slug` da solo non basta: la
+ * stessa persona può avere più borse (anni/città diversi) e quindi più record
+ * con lo stesso slug. Combinando slug + destinazione + coorte otteniamo una
+ * chiave stabile e univoca, usata per le key React, lo stato di apertura e il
+ * deep-link (?alumnus=…).
+ */
+export function alumnusId(a: Alumnus): string {
+  return `${a.slug}--${a.fellowship.destination.toLowerCase()}-${a.fellowship.cohort}`;
+}
+
+/**
  * Ordinamento per la visualizzazione delle liste: prima i Team Leader, poi gli
  * altri in ordine lessicografico di cognome (quindi nome).
  */

@@ -77,10 +77,14 @@ export function AccordionItem({
   alumnus,
   isOpen,
   onToggle,
+  allowExpand = false,
 }: {
   alumnus: Alumnus;
   isOpen: boolean;
   onToggle: () => void;
+  // Mostra il bottone "Apri scheda completa" (utile nel drawer; superfluo
+  // nella vista a lista, dove c'è già l'intero direttorio).
+  allowExpand?: boolean;
 }) {
   const reduce = useReducedMotion();
   const bodyId = useId();
@@ -89,6 +93,8 @@ export function AccordionItem({
 
   const pis = f.pis.filter(Boolean).join(", ");
   const tutors = f.tutors.filter(Boolean).join(", ");
+  const topics = f.topics.filter(Boolean);
+  const showExpand = allowExpand && profileModal !== null;
   const mailto = n.email && n.email.includes("@") ? `mailto:${n.email}` : null;
 
   // Abstract diviso in paragrafi sulle righe vuote (\n\n); i singoli \n restano.
@@ -164,6 +170,19 @@ export function AccordionItem({
                 )}
               </div>
             )}
+
+            {topics.length > 0 && (
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {topics.map((t) => (
+                  <span
+                    key={t}
+                    className="inline-flex items-center rounded-full border border-border bg-neutral-50 px-2 py-0.5 text-[11px] font-medium text-primary-700"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
 
           <motion.span
@@ -193,8 +212,8 @@ export function AccordionItem({
           >
             <div className="border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
               {/* Apre la scheda completa nel modale (lettura immersiva +
-                  link condivisibile). */}
-              {profileModal && (
+                  link condivisibile). Solo nel drawer: nella lista è superfluo. */}
+              {showExpand && profileModal && (
                 <div className="mb-3 flex justify-end">
                   <button
                     type="button"

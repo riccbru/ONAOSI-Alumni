@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { useMemo, useState } from "react";
 import type { Alumnus } from "@/types/alumni";
-import { sortForDisplay } from "@/lib/filters";
+import { alumnusId, sortForDisplay } from "@/lib/filters";
 import { AccordionItem } from "./AccordionItem";
 import { SearchIcon } from "./icons";
 
@@ -28,11 +28,14 @@ export function EmptyState({ message }: { message: string }) {
 export function AlumniAccordionList({
   alumni,
   stagger = false,
+  allowExpand = false,
 }: {
   alumni: Alumnus[];
   stagger?: boolean;
+  // Propagato agli item: abilita il bottone "Apri scheda completa" (drawer).
+  allowExpand?: boolean;
 }) {
-  const [openSlug, setOpenSlug] = useState<string | null>(null);
+  const [openId, setOpenId] = useState<string | null>(null);
   const reduce = useReducedMotion();
 
   // Team Leader in cima, poi per cognome.
@@ -45,15 +48,17 @@ export function AlumniAccordionList({
   return (
     <ul className="flex flex-col gap-3">
       {ordered.map((a, i) => {
+        const id = alumnusId(a);
         const content = (
           <AccordionItem
             alumnus={a}
-            isOpen={openSlug === a.slug}
-            onToggle={() => setOpenSlug((cur) => (cur === a.slug ? null : a.slug))}
+            isOpen={openId === id}
+            onToggle={() => setOpenId((cur) => (cur === id ? null : id))}
+            allowExpand={allowExpand}
           />
         );
         return (
-          <li key={a.slug}>
+          <li key={id}>
             {stagger && !reduce ? (
               <motion.div
                 initial={{ opacity: 0, y: 8 }}

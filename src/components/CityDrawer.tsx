@@ -165,7 +165,7 @@ export function CityDrawer({
                           {items.length} {items.length === 1 ? "alumnus" : "alumni"}
                         </span>
                       </div>
-                      <AlumniAccordionList alumni={items} stagger />
+                      <AlumniAccordionList alumni={items} stagger allowExpand />
                     </section>
                   ))}
                 </div>
