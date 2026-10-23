@@ -8,6 +8,7 @@ type Props = {
   alumni: Alumnus[];
   initialView: ViewMode;
   initialCity: Destination | null;
+  initialAlumnusSlug: string | null;
 };
 
 /**
@@ -15,15 +16,26 @@ type Props = {
  * del drawer sono decise lato server dai query param (?view / ?city), così al
  * refresh l'HTML arriva già nello stato giusto senza flash lista→mappa.
  */
-export default function HomePage({ alumni, initialView, initialCity }: Props) {
+export default function HomePage({
+  alumni,
+  initialView,
+  initialCity,
+  initialAlumnusSlug,
+}: Props) {
   return (
-    <AlumniExplorer alumni={alumni} initialView={initialView} initialCity={initialCity} />
+    <AlumniExplorer
+      alumni={alumni}
+      initialView={initialView}
+      initialCity={initialCity}
+      initialAlumnusSlug={initialAlumnusSlug}
+    />
   );
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async ({ query }) => {
   const alumni = getAllAlumni();
   const destinations = new Set(alumni.map((a) => a.fellowship.destination));
+  const slugs = new Set(alumni.map((a) => a.slug));
 
   const initialView: ViewMode = query.view === "map" ? "map" : "list";
 
@@ -33,5 +45,8 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ query }) =
       ? (rawCity as Destination)
       : null;
 
-  return { props: { alumni, initialView, initialCity } };
+  const rawAlumnus = Array.isArray(query.alumnus) ? query.alumnus[0] : query.alumnus;
+  const initialAlumnusSlug = rawAlumnus && slugs.has(rawAlumnus) ? rawAlumnus : null;
+
+  return { props: { alumni, initialView, initialCity, initialAlumnusSlug } };
 };

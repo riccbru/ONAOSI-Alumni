@@ -5,10 +5,12 @@ import { useId } from "react";
 import type { Alumnus } from "@/types/alumni";
 import { Avatar } from "./Avatar";
 import { DestinationBadge, YearChip } from "./Badges";
+import { useProfileModal } from "./ProfileModalContext";
 import {
   BriefcaseIcon,
   BuildingIcon,
   ChevronDown,
+  ExpandIcon,
   GithubIcon,
   GraduationIcon,
   LinkedinIcon,
@@ -82,6 +84,7 @@ export function AccordionItem({
 }) {
   const reduce = useReducedMotion();
   const bodyId = useId();
+  const profileModal = useProfileModal();
   const { fellowship: f, background: b, currentStatus: cs, networking: n } = alumnus;
 
   const pis = f.pis.filter(Boolean).join(", ");
@@ -107,13 +110,14 @@ export function AccordionItem({
           : "border-border hover:border-primary-200"
       }`}
     >
-      <h3>
+      <div className="flex items-start gap-2 p-4 sm:gap-3 sm:p-5">
+        <h3 className="min-w-0 flex-1">
         <button
           type="button"
           onClick={onToggle}
           aria-expanded={isOpen}
           aria-controls={bodyId}
-          className="press flex w-full items-start gap-3 p-4 text-left sm:gap-4 sm:p-5"
+          className="press flex w-full items-start gap-3 text-left sm:gap-4"
         >
           <div className="relative shrink-0">
             <Avatar
@@ -171,7 +175,20 @@ export function AccordionItem({
             <ChevronDown />
           </motion.span>
         </button>
-      </h3>
+        </h3>
+
+        {profileModal && (
+          <button
+            type="button"
+            onClick={() => profileModal.openProfile(alumnus)}
+            aria-label="Apri scheda completa"
+            title="Apri scheda completa"
+            className="press mt-0.5 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-border bg-neutral-0 text-text-secondary transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
+          >
+            <ExpandIcon className="h-[18px] w-[18px]" />
+          </button>
+        )}
+      </div>
 
       <AnimatePresence initial={false}>
         {isOpen && (
