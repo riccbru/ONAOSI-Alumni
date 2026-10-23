@@ -6,9 +6,9 @@ import type { Alumnus } from "@/types/alumni";
 import { Avatar } from "./Avatar";
 import { DestinationBadge, YearChip } from "./Badges";
 import {
+  BriefcaseIcon,
   BuildingIcon,
   ChevronDown,
-  FlaskIcon,
   GithubIcon,
   GraduationIcon,
   LinkedinIcon,
@@ -205,12 +205,12 @@ export function AccordionItem({
               )}
 
               <div className="mt-4 grid gap-4 sm:grid-cols-3">
-                <Row icon={<GraduationIcon className="h-[18px] w-[18px]" />} label="Formazione in Italia">
+                <Row icon={<GraduationIcon className="h-[18px] w-[18px]" />} label="Formazione">
                   {b.homeUniversity}
                   <span className="block text-text-secondary">{b.degree}</span>
                 </Row>
 
-                <Row icon={<BuildingIcon className="h-[18px] w-[18px]" />} label="Istituzione ospitante">
+                <Row icon={<BriefcaseIcon className="h-[18px] w-[18px]" />} label="Ricerca">
                   {f.hostInstitution}
                   {(f.lab || f.department) && (
                     <span className="block text-text-secondary">
@@ -220,7 +220,7 @@ export function AccordionItem({
                 </Row>
 
                 {(cs.role || cs.institution) && (
-                  <Row icon={<FlaskIcon className="h-[18px] w-[18px]" />} label="Oggi">
+                  <Row icon={<BuildingIcon className="h-[18px] w-[18px]" />} label="Occupazione">
                     {[cs.role, cs.institution].filter(Boolean).join(" @ ")}
                     {(cs.city || cs.country) && (
                       <span className="block text-text-secondary">

@@ -57,6 +57,22 @@ export function filterAlumni(
   });
 }
 
+/** Raggruppa per coorte (desc). Dentro ogni coorte l'ordine resta a carico
+ * di `sortForDisplay` (Team Leader in cima, poi per cognome). */
+export function groupByCohort(
+  alumni: Alumnus[],
+): { cohort: Cohort; items: Alumnus[] }[] {
+  const byYear = new Map<Cohort, Alumnus[]>();
+  for (const a of alumni) {
+    const arr = byYear.get(a.fellowship.cohort) ?? [];
+    arr.push(a);
+    byYear.set(a.fellowship.cohort, arr);
+  }
+  return Array.from(byYear.keys())
+    .sort((a, b) => b - a)
+    .map((cohort) => ({ cohort, items: byYear.get(cohort)! }));
+}
+
 /** Raggruppa per anno (desc) e, dentro, per città di destinazione. */
 export function groupByYearAndDestination(
   alumni: Alumnus[],

@@ -3,9 +3,9 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import type { Alumnus, Cohort, Destination } from "@/types/alumni";
-import { filterAlumni } from "@/lib/filters";
+import { filterAlumni, groupByCohort } from "@/lib/filters";
 import { useMediaQuery } from "@/lib/useMediaQuery";
-import { AlumniAccordionList } from "./AlumniAccordionList";
+import { AlumniAccordionList, EmptyState } from "./AlumniAccordionList";
 import { SearchBar } from "./SearchBar";
 import { CloseIcon } from "./icons";
 
@@ -51,10 +51,12 @@ export function CityDrawer({
     };
   }, [open, onClose]);
 
-  const list = useMemo(() => {
+  // Raggruppata per coorte (desc), come nella view principale.
+  const cohorts = useMemo(() => {
     if (!destination) return [];
     const base = alumni.filter((a) => a.fellowship.destination === destination);
-    return filterAlumni(base, { query, year: year ?? "all" });
+    const list = filterAlumni(base, { query, year: year ?? "all" });
+    return groupByCohort(list);
   }, [alumni, destination, query, year]);
 
   const total = destination
@@ -148,9 +150,26 @@ export function CityDrawer({
               </div>
             </div>
 
-            {/* Lista */}
+            {/* Lista, raggruppata per coorte (desc) */}
             <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 py-4 sm:px-5">
-              <AlumniAccordionList alumni={list} stagger />
+              {cohorts.length === 0 ? (
+                <EmptyState message="Nessun alumnus trovato." />
+              ) : (
+                <div className="flex flex-col gap-6">
+                  {cohorts.map(({ cohort, items }) => (
+                    <section key={cohort}>
+                      <div className="mb-2.5 flex items-center gap-3">
+                        <h3 className="text-sm font-bold text-primary-900">Coorte {cohort}</h3>
+                        <span className="h-px flex-1 bg-border" />
+                        <span className="text-xs text-text-secondary">
+                          {items.length} {items.length === 1 ? "alumnus" : "alumni"}
+                        </span>
+                      </div>
+                      <AlumniAccordionList alumni={items} stagger />
+                    </section>
+                  ))}
+                </div>
+              )}
             </div>
           </motion.aside>
         </div>
