@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { AnimatePresence, motion } from "framer-motion";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import type { Alumnus, Destination } from "@/types/alumni";
 import { CityDrawer } from "./CityDrawer";
 import { Header } from "./Header";
@@ -17,42 +17,30 @@ const GlobeView = dynamic(
 
 const EASE_OUT = [0.23, 1, 0.32, 1] as const;
 
-export function AlumniExplorer({ alumni }: { alumni: Alumnus[] }) {
-  // La pagina si apre sulla vista a lista; il globo 3D viene montato (e il suo
-  // contesto WebGL creato) solo quando si passa alla vista mappa.
-  const [view, setView] = useState<ViewMode>("list");
-  const [selected, setSelected] = useState<Destination | null>(null);
-  // Finché non abbiamo letto la URL non sincronizziamo (evita di sovrascrivere
-  // i parametri col default durante l'idratazione).
-  const [restored, setRestored] = useState(false);
-
-  // Destinazioni valide (dai dati reali): per validare il parametro ?city.
-  const destinations = useMemo(
-    () => new Set(alumni.map((a) => a.fellowship.destination)),
-    [alumni],
-  );
-
-  // Ripristino di vista e drawer dalla URL al primo mount.
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const v = params.get("view");
-    if (v === "map" || v === "list") setView(v);
-    const city = params.get("city");
-    if (city && destinations.has(city as Destination)) {
-      setSelected(city as Destination);
-    }
-    setRestored(true);
-  }, [destinations]);
+export function AlumniExplorer({
+  alumni,
+  initialView = "list",
+  initialCity = null,
+}: {
+  alumni: Alumnus[];
+  // Stato iniziale deciso dal server (dai query param): evita il flash al
+  // refresh perché l'HTML arriva già con la vista corretta.
+  initialView?: ViewMode;
+  initialCity?: Destination | null;
+}) {
+  // Il globo 3D viene montato (e il suo contesto WebGL creato) solo quando si
+  // è in vista mappa.
+  const [view, setView] = useState<ViewMode>(initialView);
+  const [selected, setSelected] = useState<Destination | null>(initialCity);
 
   // Sincronizzazione stato → URL (replaceState: niente nuove voci di history).
   useEffect(() => {
-    if (!restored) return;
     const params = new URLSearchParams();
     if (view !== "list") params.set("view", view);
     if (selected) params.set("city", selected);
     const qs = params.toString();
     window.history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
-  }, [view, selected, restored]);
+  }, [view, selected]);
 
   const handleSelect = useCallback((d: Destination) => setSelected(d), []);
   const closeDrawer = useCallback(() => setSelected(null), []);
