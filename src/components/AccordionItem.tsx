@@ -5,25 +5,18 @@ import { useId } from "react";
 import type { Alumnus } from "@/types/alumni";
 import { Avatar } from "./Avatar";
 import { DestinationBadge, YearChip } from "./Badges";
+import { ContactLinks, TopicList, splitAbstract } from "./profileParts";
 import { useProfileModal } from "./ProfileModalContext";
 import {
   BriefcaseIcon,
   BuildingIcon,
   ChevronDown,
   ExpandIcon,
-  GithubIcon,
   GraduationIcon,
-  LinkedinIcon,
-  MailIcon,
-  ScholarIcon,
   StarIcon,
 } from "./icons";
 
 const EASE_OUT = [0.23, 1, 0.32, 1] as const;
-
-function isLink(v?: string | null): v is string {
-  return !!v && /^(https?:|mailto:)/.test(v.trim());
-}
 
 /** Riga descrittiva con icona nel corpo dell'accordion. */
 function Row({
@@ -45,31 +38,6 @@ function Row({
         <div className="text-sm text-text">{children}</div>
       </div>
     </div>
-  );
-}
-
-function SocialLink({
-  href,
-  label,
-  children,
-}: {
-  href?: string | null;
-  label: string;
-  children: React.ReactNode;
-}) {
-  if (!isLink(href)) return null;
-  const isMail = href.startsWith("mailto:");
-  return (
-    <a
-      href={href}
-      target={isMail ? undefined : "_blank"}
-      rel={isMail ? undefined : "noopener noreferrer"}
-      aria-label={label}
-      title={label}
-      className="press inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-neutral-0 text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:bg-[#f0fcfc] hover:text-primary-900"
-    >
-      {children}
-    </a>
   );
 }
 
@@ -95,18 +63,7 @@ export function AccordionItem({
   const tutors = f.tutors.filter(Boolean).join(", ");
   const topics = f.topics.filter(Boolean);
   const showExpand = allowExpand && profileModal !== null;
-  const mailto = n.email && n.email.includes("@") ? `mailto:${n.email}` : null;
-
-  // Abstract diviso in paragrafi sulle righe vuote (\n\n); i singoli \n restano.
-  const abstractParagraphs = (f.projectAbstract || f.summary || "")
-    .split(/\n[ \t]*\n/)
-    .map((p) => p.trim())
-    .filter(Boolean);
-
-  // Mostra i contatti solo se l'alumnus è aperto al networking.
-  const hasContacts =
-    n.openToChat &&
-    [mailto, n.linkedin, n.github, n.scholar].some((v) => v && isLink(v));
+  const abstractParagraphs = splitAbstract(f.projectAbstract || f.summary);
 
   return (
     <div
@@ -172,15 +129,8 @@ export function AccordionItem({
             )}
 
             {topics.length > 0 && (
-              <div className="mt-2 flex flex-wrap gap-1.5">
-                {topics.map((t) => (
-                  <span
-                    key={t}
-                    className="inline-flex items-center rounded-full border border-border bg-neutral-50 px-2 py-0.5 text-[11px] font-medium text-primary-700"
-                  >
-                    {t}
-                  </span>
-                ))}
+              <div className="mt-2">
+                <TopicList topics={topics} />
               </div>
             )}
           </div>
@@ -211,21 +161,6 @@ export function AccordionItem({
             className="overflow-hidden"
           >
             <div className="border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
-              {/* Apre la scheda completa nel modale (lettura immersiva +
-                  link condivisibile). Solo nel drawer: nella lista è superfluo. */}
-              {showExpand && profileModal && (
-                <div className="mb-3 flex justify-end">
-                  <button
-                    type="button"
-                    onClick={() => profileModal.openProfile(alumnus)}
-                    className="press inline-flex items-center gap-1.5 rounded-lg border border-border bg-neutral-0 px-3 py-1.5 text-xs font-semibold text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
-                  >
-                    <ExpandIcon className="h-4 w-4" />
-                    Apri scheda completa
-                  </button>
-                </div>
-              )}
-
               {/* Abstract: ogni riga vuota (\n\n nel JSON) separa un paragrafo;
                   i singoli \n diventano a-capo grazie a whitespace-pre-line. */}
               {abstractParagraphs.length > 0 && (
@@ -268,22 +203,21 @@ export function AccordionItem({
                 )}
               </div>
 
-              {/* Contatti & social — solo icone, centrati in fondo al body.
-                  Visibili solo se openToChat e solo i link effettivamente valorizzati. */}
-              {hasContacts && (
-                <div className="mt-6 flex items-center justify-center gap-2.5">
-                  <SocialLink href={mailto ?? ""} label="Invia email">
-                    <MailIcon className="h-[18px] w-[18px]" />
-                  </SocialLink>
-                  <SocialLink href={n.linkedin} label="LinkedIn">
-                    <LinkedinIcon className="h-[18px] w-[18px]" />
-                  </SocialLink>
-                  <SocialLink href={n.github} label="GitHub">
-                    <GithubIcon className="h-[18px] w-[18px]" />
-                  </SocialLink>
-                  <SocialLink href={n.scholar} label="Google Scholar">
-                    <ScholarIcon className="h-[18px] w-[18px]" />
-                  </SocialLink>
+              {/* Contatti & social — solo icone, centrati in fondo al body. */}
+              <ContactLinks networking={n} className="mt-6" />
+
+              {/* Scheda completa nel modale (lettura immersiva + link
+                  condivisibile). Centrato in fondo; solo nel drawer. */}
+              {showExpand && profileModal && (
+                <div className="mt-6 flex justify-center">
+                  <button
+                    type="button"
+                    onClick={() => profileModal.openProfile(alumnus)}
+                    className="press inline-flex items-center gap-1.5 rounded-lg border border-border bg-neutral-0 px-3.5 py-2 text-xs font-semibold text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
+                  >
+                    <ExpandIcon className="h-4 w-4" />
+                    Apri scheda completa
+                  </button>
                 </div>
               )}
             </div>

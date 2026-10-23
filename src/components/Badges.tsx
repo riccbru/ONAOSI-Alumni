@@ -36,11 +36,3 @@ export function YearChip({ cohort }: { cohort: number }) {
     </span>
   );
 }
-
-export function TopicPill({ children }: { children: React.ReactNode }) {
-  return (
-    <span className="inline-flex items-center rounded-full border border-border bg-neutral-0 px-3 py-1 text-xs font-medium text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:bg-[#f0fcfc]">
-      {children}
-    </span>
-  );
-}

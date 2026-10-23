@@ -4,23 +4,11 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect } from "react";
 import type { Alumnus } from "@/types/alumni";
 import { Avatar } from "./Avatar";
-import { DestinationBadge, TeamLeaderBadge, TopicPill, YearChip } from "./Badges";
-import {
-  BriefcaseIcon,
-  BuildingIcon,
-  CloseIcon,
-  GithubIcon,
-  GraduationIcon,
-  LinkedinIcon,
-  MailIcon,
-  ScholarIcon,
-} from "./icons";
+import { DestinationBadge, TeamLeaderBadge, YearChip } from "./Badges";
+import { ContactLinks, TopicList, splitAbstract } from "./profileParts";
+import { BriefcaseIcon, BuildingIcon, CloseIcon, GraduationIcon } from "./icons";
 
 const EASE_OUT = [0.23, 1, 0.32, 1] as const;
-
-function isLink(v?: string | null): v is string {
-  return !!v && /^(https?:|mailto:)/.test(v.trim());
-}
 
 /** Pilastro informativo centrato (Formazione / Ricerca / Occupazione). */
 function Pillar({
@@ -43,35 +31,10 @@ function Pillar({
   );
 }
 
-function SocialLink({
-  href,
-  label,
-  children,
-}: {
-  href?: string | null;
-  label: string;
-  children: React.ReactNode;
-}) {
-  if (!isLink(href)) return null;
-  const isMail = href.startsWith("mailto:");
-  return (
-    <a
-      href={href}
-      target={isMail ? undefined : "_blank"}
-      rel={isMail ? undefined : "noopener noreferrer"}
-      aria-label={label}
-      title={label}
-      className="press inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-neutral-0 text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:bg-[#f0fcfc] hover:text-primary-900"
-    >
-      {children}
-    </a>
-  );
-}
-
 /**
  * Modale a tutta pagina con la scheda completa di un alumnus: lettura immersiva
  * dell'abstract e di tutti i dettagli. Si apre dal bottone "espandi" e dal
- * deep-link (?alumnus=slug). Chiusura con Escape, backdrop e tasto X.
+ * deep-link (?alumnus=id). Chiusura con Escape, backdrop e tasto X.
  */
 export function ProfileModal({
   alumnus,
@@ -118,16 +81,7 @@ function ProfileModalContent({
   const pis = f.pis.filter(Boolean).join(", ");
   const tutors = f.tutors.filter(Boolean).join(", ");
   const topics = f.topics.filter(Boolean);
-  const mailto = n.email && n.email.includes("@") ? `mailto:${n.email}` : null;
-
-  const abstractParagraphs = (f.projectAbstract || f.summary || "")
-    .split(/\n[ \t]*\n/)
-    .map((p) => p.trim())
-    .filter(Boolean);
-
-  const hasContacts =
-    n.openToChat &&
-    [mailto, n.linkedin, n.github, n.scholar].some((v) => v && isLink(v));
+  const abstractParagraphs = splitAbstract(f.projectAbstract || f.summary);
 
   return (
     <div
@@ -207,6 +161,13 @@ function ProfileModalContent({
             </div>
           )}
 
+          {/* Topic: stessa posizione della card in lista (sotto PI/Tutor). */}
+          {topics.length > 0 && (
+            <div className="mt-2.5">
+              <TopicList topics={topics} />
+            </div>
+          )}
+
           {abstractParagraphs.length > 0 && (
             <div className="mt-4 space-y-3">
               {abstractParagraphs.map((para, i) => (
@@ -244,30 +205,10 @@ function ProfileModalContent({
             )}
           </div>
 
-          {topics.length > 0 && (
-            <div className="mt-5 flex flex-wrap gap-1.5">
-              {topics.map((t) => (
-                <TopicPill key={t}>{t}</TopicPill>
-              ))}
-            </div>
-          )}
-
-          {hasContacts && (
-            <div className="mt-6 flex items-center justify-center gap-2.5 border-t border-border/70 pt-5">
-              <SocialLink href={mailto ?? ""} label="Invia email">
-                <MailIcon className="h-[18px] w-[18px]" />
-              </SocialLink>
-              <SocialLink href={n.linkedin} label="LinkedIn">
-                <LinkedinIcon className="h-[18px] w-[18px]" />
-              </SocialLink>
-              <SocialLink href={n.github} label="GitHub">
-                <GithubIcon className="h-[18px] w-[18px]" />
-              </SocialLink>
-              <SocialLink href={n.scholar} label="Google Scholar">
-                <ScholarIcon className="h-[18px] w-[18px]" />
-              </SocialLink>
-            </div>
-          )}
+          <ContactLinks
+            networking={n}
+            className="mt-6 border-t border-border/70 pt-5"
+          />
         </div>
       </motion.div>
     </div>
