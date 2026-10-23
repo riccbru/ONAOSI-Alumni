@@ -16,25 +16,26 @@ export function GlobeSkeleton() {
       role="status"
       aria-label="Caricamento mappa"
     >
-      <div className="flex flex-col items-center gap-4 text-text-inverse/80">
+      <div className="flex flex-col items-center gap-6 text-text-inverse/80">
         <svg
           viewBox="0 0 120 120"
-          className="h-24 w-24 animate-[spin_8s_linear_infinite] text-accent motion-reduce:animate-none"
+          className="h-[64vmin] w-[64vmin] animate-[spin_9s_linear_infinite] text-accent motion-reduce:animate-none"
           fill="none"
           stroke="currentColor"
-          strokeWidth={2}
+          strokeWidth={1.4}
+          vectorEffect="non-scaling-stroke"
           aria-hidden="true"
         >
           {/* sfera */}
-          <circle cx="60" cy="60" r="52" opacity="0.9" />
+          <circle cx="60" cy="60" r="52" opacity="0.9" vectorEffect="non-scaling-stroke" />
           {/* meridiani (longitudine) */}
-          <ellipse cx="60" cy="60" rx="22" ry="52" opacity="0.55" />
-          <ellipse cx="60" cy="60" rx="40" ry="52" opacity="0.3" />
-          <line x1="60" y1="8" x2="60" y2="112" opacity="0.55" />
+          <ellipse cx="60" cy="60" rx="22" ry="52" opacity="0.5" vectorEffect="non-scaling-stroke" />
+          <ellipse cx="60" cy="60" rx="40" ry="52" opacity="0.28" vectorEffect="non-scaling-stroke" />
+          <line x1="60" y1="8" x2="60" y2="112" opacity="0.5" vectorEffect="non-scaling-stroke" />
           {/* paralleli (latitudine) */}
-          <ellipse cx="60" cy="60" rx="52" ry="22" opacity="0.55" />
-          <ellipse cx="60" cy="60" rx="52" ry="40" opacity="0.3" />
-          <line x1="8" y1="60" x2="112" y2="60" opacity="0.55" />
+          <ellipse cx="60" cy="60" rx="52" ry="22" opacity="0.5" vectorEffect="non-scaling-stroke" />
+          <ellipse cx="60" cy="60" rx="52" ry="40" opacity="0.28" vectorEffect="non-scaling-stroke" />
+          <line x1="8" y1="60" x2="112" y2="60" opacity="0.5" vectorEffect="non-scaling-stroke" />
         </svg>
         <span className="text-sm font-medium">Caricamento mappa…</span>
       </div>
