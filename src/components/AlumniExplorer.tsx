@@ -5,14 +5,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import type { Alumnus, Destination } from "@/types/alumni";
 import { CityDrawer } from "./CityDrawer";
+import { GlobeSkeleton } from "./GlobeSkeleton";
 import { Header } from "./Header";
 import { ListView } from "./ListView";
 import type { ViewMode } from "./ViewToggle";
 
-// Il globo è pesante (WebGL): niente SSR, caricato alla bisogna.
+// Il globo è pesante (WebGL): niente SSR, caricato alla bisogna. Durante il
+// download del chunk mostriamo lo skeleton del mappamondo.
 const GlobeView = dynamic(
   () => import("./GlobeView").then((m) => m.GlobeView),
-  { ssr: false },
+  { ssr: false, loading: () => <GlobeSkeleton /> },
 );
 
 const EASE_OUT = [0.23, 1, 0.32, 1] as const;

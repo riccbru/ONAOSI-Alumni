@@ -5,6 +5,7 @@ import Globe from "react-globe.gl";
 import * as THREE from "three";
 import type { Alumnus, Destination } from "@/types/alumni";
 import { COLLEGES, DESTINATIONS, ORIGIN } from "@/lib/locations";
+import { GlobeSkeleton } from "./GlobeSkeleton";
 
 // Nota: questo modulo viene caricato solo lato client (AlumniExplorer lo importa
 // con next/dynamic + ssr:false) e viene MONTATO solo quando la vista mappa è
@@ -331,14 +332,7 @@ export function GlobeView({
         />
       )}
 
-      {!ready && (
-        <div className="absolute inset-0 grid place-items-center">
-          <div className="flex flex-col items-center gap-3 text-text-inverse/80">
-            <span className="h-8 w-8 animate-spin rounded-full border-2 border-accent border-t-transparent" />
-            <span className="text-sm">Caricamento mappa…</span>
-          </div>
-        </div>
-      )}
+      {!ready && <GlobeSkeleton />}
     </div>
   );
 }
