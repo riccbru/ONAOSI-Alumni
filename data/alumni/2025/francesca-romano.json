@@ -1,0 +1,45 @@
+{
+  "slug": "francesca-romano",
+  "firstName": "Francesca",
+  "lastName": "Romano",
+  "avatar": "https://picsum.photos/seed/francesca-romano/400/400",
+  "tagline": "Building tools for better science",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Hee-Jong Kim"],
+    "pis": ["Chien-Min Kao"],
+    "lab": "Toyota Technological Institute at Chicago",
+    "projectTitle": "Characterizing PET detectors",
+    "summary": "During the fellowship at University of Chicago, worked in the Toyota Technological Institute at Chicago under Gregory Shakhnarovich on NLP and Transformers, contributing to research that combines biomedical engineering with advanced computational methods.",
+    "topics": [
+      "NLP",
+      "Transformers",
+      "LLM"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Politecnico di Milano",
+    "degree": "MSc Biomedical Engineering"
+  },
+  "currentStatus": {
+    "role": "Machine Learning Engineer",
+    "institution": "Sils im Domleschg Research Center",
+    "city": "Sils im Domleschg",
+    "country": "Switzerland"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "NLP",
+      "Transformers",
+      "LLM"
+    ],
+    "email": "francesca.romano@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/francesca-romano",
+    "github": "https://github.com/orangewolf546",
+    "scholar": "https://scholar.google.com/citations?user=orangewolf"
+  }
+}

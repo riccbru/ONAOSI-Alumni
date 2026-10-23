@@ -1,0 +1,45 @@
+{
+  "slug": "mattia-conti",
+  "firstName": "Mattia",
+  "lastName": "Conti",
+  "avatar": "https://picsum.photos/seed/mattia-conti/400/400",
+  "tagline": "Decoding biology with computation",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Avinay Bhat"],
+    "pis": ["Chin-Tu Chen", "Maryellen Giger"],
+    "lab": "Department of Neurobiology",
+    "projectTitle": "Using Machine Learning for Improved Imaging Interpretation of Alzheimer's Disease",
+    "summary": "During the fellowship at University of Chicago, worked in the Department of Neurobiology under David Freedman on Neuroscience and fMRI, contributing to research that combines neuroscience with advanced computational methods.",
+    "topics": [
+      "Neuroscience",
+      "fMRI",
+      "Connectomics"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Genova",
+    "degree": "MSc Neuroscience"
+  },
+  "currentStatus": {
+    "role": "Lab Manager",
+    "institution": "Ojocaliente Research Center",
+    "city": "Ojocaliente",
+    "country": "Mexico"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Neuroscience",
+      "fMRI",
+      "Connectomics"
+    ],
+    "email": "mattia.conti@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/mattia-conti",
+    "github": "https://github.com/orangerabbit293",
+    "scholar": "https://scholar.google.com/citations?user=orangerabb"
+  }
+}

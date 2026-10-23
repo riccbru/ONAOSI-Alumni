@@ -1,0 +1,45 @@
+{
+  "slug": "veronica-montana",
+  "firstName": "Veronica",
+  "lastName": "Montana",
+  "avatar": "https://picsum.photos/seed/veronica-montana/400/400",
+  "tagline": "Learning something new every day",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Lin Piao"],
+    "pis": ["Willard Sharp"],
+    "lab": "Toyota Technological Institute at Chicago",
+    "projectTitle": "Imaging of Brain Hypoxia and Oxygen by PET in Cardiac Arrest Model",
+    "summary": "During the fellowship at University of Chicago, worked in the Toyota Technological Institute at Chicago under Gregory Shakhnarovich on Chemistry and Catalysis, contributing to research that combines applied physics with advanced computational methods.",
+    "topics": [
+      "Chemistry",
+      "Catalysis",
+      "Molecular Dynamics"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Scuola Normale Superiore di Pisa",
+    "degree": "MSc Applied Physics"
+  },
+  "currentStatus": {
+    "role": "Machine Learning Engineer",
+    "institution": "Sheffield Research Center",
+    "city": "Sheffield",
+    "country": "United Kingdom"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Chemistry",
+      "Catalysis",
+      "Molecular Dynamics"
+    ],
+    "email": "veronica.montana@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/veronica-montana",
+    "github": "https://github.com/happykoala630",
+    "scholar": "https://scholar.google.com/citations?user=happykoala"
+  }
+}

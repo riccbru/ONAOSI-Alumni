@@ -1,0 +1,45 @@
+{
+  "slug": "lorenzo-greco",
+  "firstName": "Lorenzo",
+  "lastName": "Greco",
+  "avatar": "https://picsum.photos/seed/lorenzo-greco/400/400",
+  "tagline": "Exploring the frontiers of AI",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Yong-Hu Fang"],
+    "pis": ["Willard Sharp"],
+    "lab": "Department of Computer Science",
+    "projectTitle": "Imaging of Brain Hypoxia and Oxygen by PET in Cardiac Arrest Model",
+    "summary": "During the fellowship at University of Chicago, worked in the Department of Computer Science under Michael Franklin on Quantum Computing and Physics, contributing to research that combines physics with advanced computational methods.",
+    "topics": [
+      "Quantum Computing",
+      "Physics",
+      "Simulation"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Padova",
+    "degree": "MSc Physics"
+  },
+  "currentStatus": {
+    "role": "Data Scientist",
+    "institution": "Oviedo Research Center",
+    "city": "Oviedo",
+    "country": "Spain"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Quantum Computing",
+      "Physics",
+      "Simulation"
+    ],
+    "email": "lorenzo.greco@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/lorenzo-greco",
+    "github": "https://github.com/silverelephant707",
+    "scholar": "https://scholar.google.com/citations?user=silverelep"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "niccolo-agnelli",
+  "firstName": "Niccolò",
+  "lastName": "Agnelli",
+  "avatar": "https://picsum.photos/seed/niccolo-agnelli/400/400",
+  "tagline": "Where physics meets machine learning",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Chien-Min Kao"],
+    "pis": ["Heejong Kim"],
+    "lab": "Michelson Center for Physics",
+    "projectTitle": "Performance characterization of PET detectors and systems",
+    "summary": "During the fellowship at University of Chicago, worked in the Michelson Center for Physics under Rebecca Willett on Climate and Remote Sensing, contributing to research that combines statistics with advanced computational methods.",
+    "topics": [
+      "Climate",
+      "Remote Sensing",
+      "GIS"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università degli Studi di Milano",
+    "degree": "MSc Statistics"
+  },
+  "currentStatus": {
+    "role": "PhD Candidate",
+    "institution": "Dzhankoy Research Center",
+    "city": "Dzhankoy",
+    "country": "Ukraine"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Climate",
+      "Remote Sensing",
+      "GIS"
+    ],
+    "email": "niccolo.agnelli@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/niccolo-agnelli",
+    "github": "https://github.com/browntiger421",
+    "scholar": "https://scholar.google.com/citations?user=browntiger"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "gaetano-dantonio",
+  "firstName": "Gaetano",
+  "lastName": "d'Antonio",
+  "avatar": "https://picsum.photos/seed/gaetano-dantonio/400/400",
+  "tagline": "Exploring the frontiers of AI",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Anitha Govind"],
+    "pis": ["William Grenn"],
+    "lab": "Department of Neurobiology",
+    "projectTitle": "Multi-Modality Imaging of Nicotine Addiction and Smoking Cessation",
+    "summary": "During the fellowship at University of Chicago, worked in the Department of Neurobiology under David Freedman on Quantum Computing and Physics, contributing to research that combines physics with advanced computational methods.",
+    "topics": [
+      "Quantum Computing",
+      "Physics",
+      "Simulation"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Parma",
+    "degree": "MSc Physics"
+  },
+  "currentStatus": {
+    "role": "Lab Manager",
+    "institution": "Montreuil Research Center",
+    "city": "Montreuil",
+    "country": "France"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Quantum Computing",
+      "Physics",
+      "Simulation"
+    ],
+    "email": "gaetano.dantonio@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/gaetano-dantonio",
+    "github": "https://github.com/sadbutterfly394",
+    "scholar": "https://scholar.google.com/citations?user=sadbutterf"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "riccardo-bruno",
+  "firstName": "Riccardo",
+  "lastName": "Bruno",
+  "avatar": "https://avatars.githubusercontent.com/u/74079434?v=4",
+  "tagline": "tagline",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": true,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Avinay Bath", "Bonnie Fleming"],
+    "pis": ["Chin-Tu Chen"],
+    "lab": "Michelson Center for Physics",
+    "projectTitle": "Using Machine Learning for Improved Imaging Interpretation of Alzheimer’s Disease",
+    "summary": "Summary",
+    "topics": ["ML", "DL", "CNN"]
+  },
+  "background": {
+    "homeUniversity": "Politecnico di Torino",
+    "degree": "MSc Cybersecurity"
+  },
+  "currentStatus": {
+    "role": "role",
+    "institution": "institution",
+    "city": "city",
+    "country": "country"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": ["askMeAbout"],
+    "email": "email",
+    "linkedin": "linkedin",
+    "github": "github",
+    "scholar": "scholar"
+  } 
+}

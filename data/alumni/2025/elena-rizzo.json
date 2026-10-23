@@ -1,0 +1,45 @@
+{
+  "slug": "elena-rizzo",
+  "firstName": "Elena",
+  "lastName": "Rizzo",
+  "avatar": "https://picsum.photos/seed/elena-rizzo/400/400",
+  "tagline": "Designing the next generation of devices",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Hee-Jong Kim"],
+    "pis": ["Chien-Min Kao"],
+    "lab": "Institute for Biophysical Dynamics",
+    "projectTitle": "Characterizing a hybrid small-animal (preclinical) PET/EPRI scanner",
+    "summary": "During the fellowship at University of Chicago, worked in the Institute for Biophysical Dynamics under Allison Squires on Materials and Nanotech, contributing to research that combines chemistry with advanced computational methods.",
+    "topics": [
+      "Materials",
+      "Nanotech",
+      "Spectroscopy"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Trento",
+    "degree": "MSc Chemistry"
+  },
+  "currentStatus": {
+    "role": "Research Associate",
+    "institution": "Forssa Research Center",
+    "city": "Forssa",
+    "country": "Finland"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Materials",
+      "Nanotech",
+      "Spectroscopy"
+    ],
+    "email": "elena.rizzo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/elena-rizzo",
+    "github": "https://github.com/bigwolf519",
+    "scholar": "https://scholar.google.com/citations?user=bigwolf519"
+  }
+}

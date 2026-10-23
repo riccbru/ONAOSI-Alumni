@@ -1,0 +1,45 @@
+{
+  "slug": "camilla-vitale",
+  "firstName": "Camilla",
+  "lastName": "Vitale",
+  "avatar": "https://picsum.photos/seed/camilla-vitale/400/400",
+  "tagline": "Connecting people and ideas",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": ["YiChia Chiu"],
+    "pis": ["Ruby Yun-Ju Huang"],
+    "lab": "Department of Chemistry",
+    "projectTitle": "Assessing the trajectory of metastatic tropism of SNAI1 acetylation in ovarian cancer cells",
+    "summary": "During the fellowship at National Taiwan University, worked in the Department of Chemistry under Chun-Nan Hsu on Biophysics and Microscopy, contributing to research that combines robotics and automation with advanced computational methods.",
+    "topics": [
+      "Biophysics",
+      "Microscopy",
+      "Imaging"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Salerno",
+    "degree": "MSc Robotics and Automation"
+  },
+  "currentStatus": {
+    "role": "Software Engineer",
+    "institution": "Lauvsnes Research Center",
+    "city": "Lauvsnes",
+    "country": "Norway"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Biophysics",
+      "Microscopy",
+      "Imaging"
+    ],
+    "email": "camilla.vitale@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/camilla-vitale",
+    "github": "https://github.com/happycat664",
+    "scholar": "https://scholar.google.com/citations?user=happycat66"
+  }
+}

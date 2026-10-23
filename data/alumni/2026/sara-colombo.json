@@ -1,0 +1,45 @@
+{
+  "slug": "sara-colombo",
+  "firstName": "Sara",
+  "lastName": "Colombo",
+  "avatar": "https://picsum.photos/seed/sara-colombo/400/400",
+  "tagline": "From theory to real-world impact",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": [],
+    "pis": ["Fei-Man Hsu"],
+    "lab": "Graduate Institute of Networking and Multimedia",
+    "projectTitle": "Epigenomic Memory and Scalable Software Tools for Large-Scale DNA Methylation Profiling",
+    "summary": "During the fellowship at National Taiwan University, worked in the Graduate Institute of Networking and Multimedia under Wen-Huang Cheng on Cybersecurity and Cryptography, contributing to research that combines electrical engineering with advanced computational methods.",
+    "topics": [
+      "Cybersecurity",
+      "Cryptography",
+      "Networks"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università Politecnica delle Marche",
+    "degree": "MSc Electrical Engineering"
+  },
+  "currentStatus": {
+    "role": "PhD Candidate",
+    "institution": "Rusko Research Center",
+    "city": "Rusko",
+    "country": "Finland"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Cybersecurity",
+      "Cryptography",
+      "Networks"
+    ],
+    "email": "sara.colombo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sara-colombo",
+    "github": "https://github.com/smalltiger705",
+    "scholar": "https://scholar.google.com/citations?user=smalltiger"
+  }
+}

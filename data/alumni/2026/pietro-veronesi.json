@@ -1,0 +1,45 @@
+{
+  "slug": "pietro-veronesi",
+  "firstName": "Pietro",
+  "lastName": "Veronesi",
+  "avatar": "https://picsum.photos/seed/pietro-veronesi/400/400",
+  "tagline": "Connecting people and ideas",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Riccardo Lispi"],
+    "pis": ["Alfredo Garcia"],
+    "lab": "Ben May Department for Cancer Research",
+    "projectTitle": "Mechanistic Consequences of Fentanyl-Induced Hypoxia and Cardiorespiratory Collapse",
+    "summary": "During the fellowship at University of Chicago, worked in the Ben May Department for Cancer Research under Marsha Rosner on Biophysics and Microscopy, contributing to research that combines robotics and automation with advanced computational methods.",
+    "topics": [
+      "Biophysics",
+      "Microscopy",
+      "Imaging"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Trieste",
+    "degree": "MSc Robotics and Automation"
+  },
+  "currentStatus": {
+    "role": "Research Scientist",
+    "institution": "Ignacio Zaragoza Research Center",
+    "city": "Ignacio Zaragoza",
+    "country": "Mexico"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Biophysics",
+      "Microscopy",
+      "Imaging"
+    ],
+    "email": "pietro.veronesi@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/pietro-veronesi",
+    "github": "https://github.com/purplegorilla512",
+    "scholar": "https://scholar.google.com/citations?user=purplegori"
+  }
+}

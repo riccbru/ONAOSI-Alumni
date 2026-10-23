@@ -1,0 +1,45 @@
+{
+  "slug": "gaia-pellegrini",
+  "firstName": "Gaia",
+  "lastName": "Pellegrini",
+  "avatar": "https://picsum.photos/seed/gaia-pellegrini/400/400",
+  "tagline": "Turning data into discovery",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": ["Jefferson Dionisio"],
+    "pis": ["Che Lin"],
+    "lab": "Department of Life Science",
+    "projectTitle": "Bridging Morphology and Molecules: Adapting Pathology Foundation Models for Spatial Transcriptomics",
+    "summary": "During the fellowship at National Taiwan University, worked in the Department of Life Science under Yi-Ren Yeh on ML and DL, contributing to research that combines computer science with advanced computational methods.",
+    "topics": [
+      "ML",
+      "DL",
+      "Computer Vision"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Brescia",
+    "degree": "MSc Computer Science"
+  },
+  "currentStatus": {
+    "role": "Lab Manager",
+    "institution": "Armstrong Research Center",
+    "city": "Armstrong",
+    "country": "Canada"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "ML",
+      "DL",
+      "Computer Vision"
+    ],
+    "email": "gaia.pellegrini@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/gaia-pellegrini",
+    "github": "https://github.com/whiteladybug816",
+    "scholar": "https://scholar.google.com/citations?user=whiteladyb"
+  }
+}

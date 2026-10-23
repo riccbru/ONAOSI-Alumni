@@ -1,0 +1,45 @@
+{
+  "slug": "ginevra-sartori",
+  "firstName": "Ginevra",
+  "lastName": "Sartori",
+  "avatar": "https://picsum.photos/seed/ginevra-sartori/400/400",
+  "tagline": "Turning data into discovery",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": true,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Hannah Zhang"],
+    "pis": ["Chin-Tu Chen"],
+    "lab": "Michelson Center for Physics",
+    "projectTitle": "Molecular Imaging and Theranostics Toward Personalized Medicine in Cancer",
+    "summary": "During the fellowship at University of Chicago, worked in the Michelson Center for Physics under Rebecca Willett on ML and DL, contributing to research that combines computer science with advanced computational methods.",
+    "topics": [
+      "ML",
+      "DL",
+      "Computer Vision"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Politecnico di Torino",
+    "degree": "MSc Computer Science"
+  },
+  "currentStatus": {
+    "role": "PhD Candidate",
+    "institution": "University of Chicago",
+    "city": "Naranjal",
+    "country": "Mexico"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "ML",
+      "DL",
+      "Computer Vision"
+    ],
+    "email": "ginevra.sartori@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ginevra-sartori",
+    "github": "https://github.com/ginevrasartori",
+    "scholar": "https://scholar.google.com/citations?user=ginevras"
+  }
+}

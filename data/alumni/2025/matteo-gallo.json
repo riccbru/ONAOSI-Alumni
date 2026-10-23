@@ -1,0 +1,45 @@
+{
+  "slug": "matteo-gallo",
+  "firstName": "Matteo",
+  "lastName": "Gallo",
+  "avatar": "https://picsum.photos/seed/matteo-gallo/400/400",
+  "tagline": "From theory to real-world impact",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Boris Epel"],
+    "pis": ["Howard Halpern"],
+    "lab": "Department of Statistics",
+    "projectTitle": "Multi-Modality Imaging for Improving Radiotherapy in Hypoxic Tumors",
+    "summary": "During the fellowship at University of Chicago, worked in the Department of Statistics under Dan Nicolae on Cybersecurity and Cryptography, contributing to research that combines electrical engineering with advanced computational methods.",
+    "topics": [
+      "Cybersecurity",
+      "Cryptography",
+      "Networks"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Pisa",
+    "degree": "MSc Electrical Engineering"
+  },
+  "currentStatus": {
+    "role": "Software Engineer",
+    "institution": "Olden Research Center",
+    "city": "Olden",
+    "country": "Norway"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Cybersecurity",
+      "Cryptography",
+      "Networks"
+    ],
+    "email": "matteo.gallo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/matteo-gallo",
+    "github": "https://github.com/tinylion100",
+    "scholar": "https://scholar.google.com/citations?user=tinylion10"
+  }
+}

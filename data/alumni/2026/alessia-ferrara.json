@@ -1,0 +1,45 @@
+{
+  "slug": "alessia-ferrara",
+  "firstName": "Alessia",
+  "lastName": "Ferrara",
+  "avatar": "https://picsum.photos/seed/alessia-ferrara/400/400",
+  "tagline": "Decoding biology with computation",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": [],
+    "pis": ["Mei-Ju May Chen"],
+    "lab": "Institute of Applied Mechanics",
+    "projectTitle": "Open-Source Computational Frameworks for Multi-Omics Analysis of Tumor Heterogeneity and Epigenetic Alterations",
+    "summary": "During the fellowship at National Taiwan University, worked in the Institute of Applied Mechanics under Jyh-Shing Roger Jang on Neuroscience and fMRI, contributing to research that combines neuroscience with advanced computational methods.",
+    "topics": [
+      "Neuroscience",
+      "fMRI",
+      "Connectomics"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Bergamo",
+    "degree": "MSc Neuroscience"
+  },
+  "currentStatus": {
+    "role": "Research Scientist",
+    "institution": "Nurmes Research Center",
+    "city": "Nurmes",
+    "country": "Finland"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Neuroscience",
+      "fMRI",
+      "Connectomics"
+    ],
+    "email": "alessia.ferrara@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/alessia-ferrara",
+    "github": "https://github.com/orangegorilla533",
+    "scholar": "https://scholar.google.com/citations?user=orangegori"
+  }
+}

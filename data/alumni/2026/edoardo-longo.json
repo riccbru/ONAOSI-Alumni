@@ -1,0 +1,45 @@
+{
+  "slug": "edoardo-longo",
+  "firstName": "Edoardo",
+  "lastName": "Longo",
+  "avatar": "https://picsum.photos/seed/edoardo-longo/400/400",
+  "tagline": "Learning something new every day",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": ["Wei Yu Yang"],
+    "pis": ["Chiara Labanti"],
+    "lab": "College of Medicine",
+    "projectTitle": "Optoelectronic characterization of organic photodetectors",
+    "summary": "During the fellowship at National Taiwan University, worked in the College of Medicine under Hao-Chuan Wang on Chemistry and Catalysis, contributing to research that combines applied physics with advanced computational methods.",
+    "topics": [
+      "Chemistry",
+      "Catalysis",
+      "Molecular Dynamics"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Udine",
+    "degree": "MSc Applied Physics"
+  },
+  "currentStatus": {
+    "role": "Consultant",
+    "institution": "Trabzon Research Center",
+    "city": "Trabzon",
+    "country": "Turkey"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Chemistry",
+      "Catalysis",
+      "Molecular Dynamics"
+    ],
+    "email": "edoardo.longo@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/edoardo-longo",
+    "github": "https://github.com/smallpeacock215",
+    "scholar": "https://scholar.google.com/citations?user=smallpeaco"
+  }
+}

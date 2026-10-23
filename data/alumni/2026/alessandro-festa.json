@@ -1,0 +1,45 @@
+{
+  "slug": "alesandro-festa",
+  "firstName": "Alessandro",
+  "lastName": "Festa",
+  "avatar": "https://picsum.photos/seed/alessandro-festa/400/400",
+  "tagline": "Bridging engineering and medicine",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Renu Rajamagesh"],
+    "pis": ["Elena M. Zannoni"],
+    "lab": "Kavli Institute for Cosmological Physics",
+    "projectTitle": "Solid-State SPECT for Radiotheranostics Applications",
+    "summary": "During the fellowship at University of Chicago, worked in the Kavli Institute for Cosmological Physics under Daniel Holz on Genomics and Bioinformatics, contributing to research that combines cybersecurity with advanced computational methods.",
+    "topics": [
+      "Genomics",
+      "Bioinformatics",
+      "NGS"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Pavia",
+    "degree": "MSc Cybersecurity"
+  },
+  "currentStatus": {
+    "role": "R&D Engineer",
+    "institution": "Isparta Research Center",
+    "city": "Isparta",
+    "country": "Turkey"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Genomics",
+      "Bioinformatics",
+      "NGS"
+    ],
+    "email": "alice.festa@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/alessandro-festa",
+    "github": "https://github.com/bluemouse851",
+    "scholar": "https://scholar.google.com/citations?user=bluemouse8"
+  }
+}

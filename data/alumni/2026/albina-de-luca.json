@@ -1,0 +1,45 @@
+{
+  "slug": "albina-de-luca",
+  "firstName": "Albina",
+  "lastName": "De Luca",
+  "avatar": "https://picsum.photos/seed/albina-de-luca/400/400",
+  "tagline": "Curious about complex systems",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Boris Epel"],
+    "pis": ["Howard Halpern"],
+    "lab": "Department of Statistics",
+    "projectTitle": "Multi-Modality Imaging for Improving Radiotherapy in Hypoxic Tumors",
+    "summary": "During the fellowship at University of Chicago, worked in the Department of Statistics under Dan Nicolae on Medical Imaging and CNN, contributing to research that combines data science with advanced computational methods.",
+    "topics": [
+      "Medical Imaging",
+      "CNN",
+      "Segmentation"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Perugia",
+    "degree": "MSc Data Science"
+  },
+  "currentStatus": {
+    "role": "Software Engineer",
+    "institution": "Oakville Research Center",
+    "city": "Oakville",
+    "country": "Canada"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Medical Imaging",
+      "CNN",
+      "Segmentation"
+    ],
+    "email": "albina.deluca@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/albina-de-luca",
+    "github": "https://github.com/orangezebra410",
+    "scholar": "https://scholar.google.com/citations?user=orangezebr"
+  }
+}

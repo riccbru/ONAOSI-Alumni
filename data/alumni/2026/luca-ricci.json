@@ -1,0 +1,45 @@
+{
+  "slug": "luca-ricci",
+  "firstName": "Luca",
+  "lastName": "Ricci",
+  "avatar": "https://picsum.photos/seed/luca-ricci/400/400",
+  "tagline": "Passionate about open science",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": true,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": [],
+    "pis": ["Tina Yuan"],
+    "lab": "Department of Computer Science and Information Engineering",
+    "projectTitle": "Human–AI Interaction for Health and Well-being Among Vulnerable User Populations",
+    "summary": "During the fellowship at National Taiwan University, worked in the Department of Computer Science and Information Engineering under Hsuan-Tien Lin on Robotics and Control, contributing to research that combines bioinformatics with advanced computational methods.",
+    "topics": [
+      "Robotics",
+      "Control",
+      "RL"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Verona",
+    "degree": "MSc Bioinformatics"
+  },
+  "currentStatus": {
+    "role": "Research Associate",
+    "institution": "National Taiwan University",
+    "city": "Roskilde",
+    "country": "Denmark"
+  },
+  "networking": {
+    "openToChat": false,
+    "askMeAbout": [
+      "Robotics",
+      "Control",
+      "RL"
+    ],
+    "email": "luca.ricci@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/luca-ricci",
+    "github": "https://github.com/happyladybug629",
+    "scholar": "https://scholar.google.com/citations?user=happyladyb"
+  }
+}

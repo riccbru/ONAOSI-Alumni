@@ -1,0 +1,45 @@
+{
+  "slug": "pietro-mariani",
+  "firstName": "Pietro",
+  "lastName": "Mariani",
+  "avatar": "https://picsum.photos/seed/pietro-mariani/400/400",
+  "tagline": "Designing the next generation of devices",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": [],
+    "pis": ["Yi-Chun Chin"],
+    "lab": "Graduate Institute of Biomedical Electronics and Bioinformatics",
+    "projectTitle": "Advanced perovskite material in photodetectors",
+    "summary": "During the fellowship at National Taiwan University, worked in the Graduate Institute of Biomedical Electronics and Bioinformatics under Yung-Yu Chuang on Materials and Nanotech, contributing to research that combines chemistry with advanced computational methods.",
+    "topics": [
+      "Materials",
+      "Nanotech",
+      "Spectroscopy"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Modena e Reggio Emilia",
+    "degree": "MSc Chemistry"
+  },
+  "currentStatus": {
+    "role": "Machine Learning Engineer",
+    "institution": "Porirua Research Center",
+    "city": "Porirua",
+    "country": "New Zealand"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Materials",
+      "Nanotech",
+      "Spectroscopy"
+    ],
+    "email": "pietro.mariani@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/pietro-mariani",
+    "github": "https://github.com/whitebird818",
+    "scholar": "https://scholar.google.com/citations?user=whitebird8"
+  }
+}

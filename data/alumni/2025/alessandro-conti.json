@@ -1,0 +1,45 @@
+{
+  "slug": "alessandro-conti",
+  "firstName": "Alessandro",
+  "lastName": "Conti",
+  "avatar": "https://picsum.photos/seed/alessandro-conti/400/400",
+  "tagline": "Curious about complex systems",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Andrew N. Groll"],
+    "pis": ["Elena M. Zannon"],
+    "lab": "Ben May Department for Cancer Research",
+    "projectTitle": "Solid-state SPECT for Hyperspectral Imaging Applications",
+    "summary": "During the fellowship at University of Chicago, worked in the Ben May Department for Cancer Research under Marsha Rosner on Medical Imaging and CNN, contributing to research that combines data science with advanced computational methods.",
+    "topics": [
+      "Medical Imaging",
+      "CNN",
+      "Segmentation"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Sapienza Università di Roma",
+    "degree": "MSc Data Science"
+  },
+  "currentStatus": {
+    "role": "Research Scientist",
+    "institution": "Bendigo Research Center",
+    "city": "Bendigo",
+    "country": "Australia"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Medical Imaging",
+      "CNN",
+      "Segmentation"
+    ],
+    "email": "alessandro.conti@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/alessandro-conti",
+    "github": "https://github.com/greenbutterfly520",
+    "scholar": "https://scholar.google.com/citations?user=greenbutte"
+  }
+}

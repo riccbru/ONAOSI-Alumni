@@ -1,0 +1,45 @@
+{
+  "slug": "michele-galli",
+  "firstName": "Michele",
+  "lastName": "Galli",
+  "avatar": "https://picsum.photos/seed/michele-galli/400/400",
+  "tagline": "Making research reproducible",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Taipei",
+    "hostInstitution": "National Taiwan University",
+    "tutors": [],
+    "pis": ["Nguyen Tuan Hung"],
+    "lab": "Department of Electrical Engineering",
+    "projectTitle": "AI-assisted first-principles design of next-generation semiconductors and energy materials",
+    "summary": "During the fellowship at National Taiwan University, worked in the Department of Electrical Engineering under Li-Chen Fu on Statistics and Causal Inference, contributing to research that combines mathematics with advanced computational methods.",
+    "topics": [
+      "Statistics",
+      "Causal Inference",
+      "Bayesian"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Siena",
+    "degree": "MSc Mathematics"
+  },
+  "currentStatus": {
+    "role": "Postdoctoral Researcher",
+    "institution": "Helsinki Research Center",
+    "city": "Helsinki",
+    "country": "Finland"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Statistics",
+      "Causal Inference",
+      "Bayesian"
+    ],
+    "email": "michele.galli@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/michele-galli",
+    "github": "https://github.com/smallsnake550",
+    "scholar": "https://scholar.google.com/citations?user=smallsnake"
+  }
+}

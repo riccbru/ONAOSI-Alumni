@@ -1,0 +1,45 @@
+{
+  "slug": "chiara-bianchi",
+  "firstName": "Chiara",
+  "lastName": "Bianchi",
+  "avatar": "https://picsum.photos/seed/chiara-bianchi/400/400",
+  "tagline": "Making research reproducible",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Mythra Varun Nemallapudi"],
+    "pis": ["Chin-Tu Chen"],
+    "lab": "Booth School of Business",
+    "projectTitle": "Quantitative PET Imaging for Investigation of Brain and Behavioral Disorders",
+    "summary": "During the fellowship at University of Chicago, worked in the Booth School of Business under Veronika Rockova on Statistics and Causal Inference, contributing to research that combines mathematics with advanced computational methods.",
+    "topics": [
+      "Statistics",
+      "Causal Inference",
+      "Bayesian"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università degli Studi di Firenze",
+    "degree": "MSc Mathematics"
+  },
+  "currentStatus": {
+    "role": "Consultant",
+    "institution": "Dijon Research Center",
+    "city": "Dijon",
+    "country": "France"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Statistics",
+      "Causal Inference",
+      "Bayesian"
+    ],
+    "email": "chiara.bianchi@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/chiara-bianchi",
+    "github": "https://github.com/bigdog587",
+    "scholar": "https://scholar.google.com/citations?user=bigdog587"
+  }
+}

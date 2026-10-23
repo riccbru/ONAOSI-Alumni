@@ -1,0 +1,45 @@
+{
+  "slug": "giulio-medici",
+  "firstName": "Giulio",
+  "lastName": "Medici",
+  "avatar": "https://picsum.photos/seed/giulio-medici/400/400",
+  "tagline": "Building tools for better science",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Chien-Min Kao"],
+    "pis": ["Yinjie Wang"],
+    "lab": "Booth School of Business",
+    "projectTitle": "Positronium Lifetime Imaging (PLI)",
+    "summary": "During the fellowship at University of Chicago, worked in the Booth School of Business under Veronika Rockova on NLP and Transformers, contributing to research that combines biomedical engineering with advanced computational methods.",
+    "topics": [
+      "NLP",
+      "Transformers",
+      "LLM"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Catania",
+    "degree": "MSc Biomedical Engineering"
+  },
+  "currentStatus": {
+    "role": "Consultant",
+    "institution": "Sikar Research Center",
+    "city": "Sikar",
+    "country": "India"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "NLP",
+      "Transformers",
+      "LLM"
+    ],
+    "email": "giulio.medici@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/giulio-medici",
+    "github": "https://github.com/blackostrich493",
+    "scholar": "https://scholar.google.com/citations?user=blackostri"
+  }
+}

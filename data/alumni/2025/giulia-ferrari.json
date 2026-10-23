@@ -1,0 +1,45 @@
+{
+  "slug": "giulia-ferrari",
+  "firstName": "Giulia",
+  "lastName": "Ferrari",
+  "avatar": "https://picsum.photos/seed/giulia-ferrari/400/400",
+  "tagline": "Bridging engineering and medicine",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Giavanna Jadick"],
+    "pis": ["Patrick La Riviere"],
+    "lab": "Pritzker School of Molecular Engineering",
+    "projectTitle": "Toward Phase Contrast CT",
+    "summary": "During the fellowship at University of Chicago, worked in the Pritzker School of Molecular Engineering under Juan de Pablo on Genomics and Bioinformatics, contributing to research that combines cybersecurity with advanced computational methods.",
+    "topics": [
+      "Genomics",
+      "Bioinformatics",
+      "NGS"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università di Bologna",
+    "degree": "MSc Cybersecurity"
+  },
+  "currentStatus": {
+    "role": "Postdoctoral Researcher",
+    "institution": "Boguslav Research Center",
+    "city": "Boguslav",
+    "country": "Ukraine"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Genomics",
+      "Bioinformatics",
+      "NGS"
+    ],
+    "email": "giulia.ferrari@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/giulia-ferrari",
+    "github": "https://github.com/smallrabbit245",
+    "scholar": "https://scholar.google.com/citations?user=smallrabbi"
+  }
+}

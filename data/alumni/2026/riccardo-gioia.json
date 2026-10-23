@@ -1,0 +1,45 @@
+{
+  "slug": "riccardo-gioia",
+  "firstName": "Riccardo",
+  "lastName": "Gioia",
+  "avatar": "https://picsum.photos/seed/riccardo-gioia/400/400",
+  "tagline": "Driven by hard problems",
+  "fellowship": {
+    "cohort": 2026,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Hannah Zhang"],
+    "pis": ["Russell Szmulewitz", "Chin-Tu Chen"],
+    "lab": "Pritzker School of Molecular Engineering",
+    "projectTitle": "Molecular Imaging and Theranostics Toward Personalized Medicine in Cancer",
+    "summary": "During the fellowship at University of Chicago, worked in the Pritzker School of Molecular Engineering under Juan de Pablo on Economics and Econometrics, contributing to research that combines molecular biology with advanced computational methods.",
+    "topics": [
+      "Economics",
+      "Econometrics",
+      "Policy"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Politecnico di Bari",
+    "degree": "MSc Molecular Biology"
+  },
+  "currentStatus": {
+    "role": "Postdoctoral Researcher",
+    "institution": "Iğdir Research Center",
+    "city": "Iğdir",
+    "country": "Turkey"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Economics",
+      "Econometrics",
+      "Policy"
+    ],
+    "email": "riccardo.gioia@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/riccardo-gioia",
+    "github": "https://github.com/angryfish107",
+    "scholar": "https://scholar.google.com/citations?user=angryfish1"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "sofia-marino",
+  "firstName": "Sofia",
+  "lastName": "Marino",
+  "avatar": "https://picsum.photos/seed/sofia-marino/400/400",
+  "tagline": "Passionate about open science",
+  "fellowship": {
+    "cohort": 2025,
+    "isTeamLeader": false,
+    "destination": "Chicago",
+    "hostInstitution": "University of Chicago",
+    "tutors": ["Angela White"],
+    "pis": ["Domenico Franco"],
+    "lab": "Kavli Institute for Cosmological Physics",
+    "projectTitle": "Data Analysis of the 2x2 Detector Response in the first DUNE neutrino beam experiment at Fermilab",
+    "summary": "During the fellowship at University of Chicago, worked in the Kavli Institute for Cosmological Physics under Daniel Holz on Robotics and Control, contributing to research that combines bioinformatics with advanced computational methods.",
+    "topics": [
+      "Robotics",
+      "Control",
+      "RL"
+    ]
+  },
+  "background": {
+    "homeUniversity": "Università degli Studi di Napoli Federico II",
+    "degree": "MSc Bioinformatics"
+  },
+  "currentStatus": {
+    "role": "R&D Engineer",
+    "institution": "Nuxco Research Center",
+    "city": "Nuxco",
+    "country": "Mexico"
+  },
+  "networking": {
+    "openToChat": true,
+    "askMeAbout": [
+      "Robotics",
+      "Control",
+      "RL"
+    ],
+    "email": "sofia.marino@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sofia-marino",
+    "github": "https://github.com/whitefish807",
+    "scholar": "https://scholar.google.com/citations?user=whitefish8"
+  }
+}
