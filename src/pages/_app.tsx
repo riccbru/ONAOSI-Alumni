@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>ONAOSI Alumni Network</title>
         <meta
           name="description"
-          content="La rete degli alumni ONAOSI: mappa 3D interattiva delle fellowship (Perugia → Chicago, Taipei) e direttorio completo dei borsisti."
+          content="Network degli alumni ONAOSI: directory di fellowship ed esperienze internazionali per connettere talenti nel mondo"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
