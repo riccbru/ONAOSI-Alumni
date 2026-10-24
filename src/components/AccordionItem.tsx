@@ -18,6 +18,10 @@ import {
 
 const EASE_OUT = [0.23, 1, 0.32, 1] as const;
 
+// Topic mostrati nell'header della card; gli eventuali altri appaiono per
+// esteso nel corpo aperto (e nella scheda completa).
+const HEADER_TOPIC_CAP = 3;
+
 /** Avatar + badge team leader, riutilizzato sia cliccabile sia statico. */
 function AvatarVisual({
   alumnus,
@@ -161,7 +165,7 @@ export function AccordionItem({
 
             {topics.length > 0 && (
               <div className="mt-2">
-                <TopicList topics={topics} />
+                <TopicList topics={topics} max={HEADER_TOPIC_CAP} />
               </div>
             )}
           </div>
@@ -208,7 +212,14 @@ export function AccordionItem({
                 </div>
               )}
 
-              <div className="mt-4 grid gap-4 sm:grid-cols-3">
+              {/* Topic per esteso: solo se nell'header ne erano nascosti (+N). */}
+              {topics.length > HEADER_TOPIC_CAP && (
+                <div className="mt-4">
+                  <TopicList topics={topics} />
+                </div>
+              )}
+
+              <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:justify-items-center">
                 <Row icon={<GraduationIcon className="h-[18px] w-[18px]" />} label="Formazione">
                   {b.homeUniversity}
                   <span className="block text-text-secondary">{b.degree}</span>

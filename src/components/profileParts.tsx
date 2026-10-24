@@ -83,13 +83,16 @@ export function ContactLinks({
 /**
  * Riga di pill dei topic di ricerca. Stesso stile e stessa posizione (sotto
  * PI/Tutor) ovunque venga mostrata, così card e modale coincidono. Non rende
- * nulla se la lista è vuota.
+ * nulla se la lista è vuota. Con `max` mostra solo i primi N topic più una
+ * pastiglia "+N" di riepilogo, per tenere pulita la riga chiusa della card.
  */
-export function TopicList({ topics }: { topics: string[] }) {
+export function TopicList({ topics, max }: { topics: string[]; max?: number }) {
   if (topics.length === 0) return null;
+  const shown = max != null && topics.length > max ? topics.slice(0, max) : topics;
+  const hidden = topics.length - shown.length;
   return (
     <div className="flex flex-wrap gap-1.5">
-      {topics.map((t) => (
+      {shown.map((t) => (
         <span
           key={t}
           className="inline-flex items-center rounded-full border border-border bg-neutral-50 px-2 py-0.5 text-[11px] font-medium text-primary-700"
@@ -97,6 +100,11 @@ export function TopicList({ topics }: { topics: string[] }) {
           {t}
         </span>
       ))}
+      {hidden > 0 && (
+        <span className="inline-flex items-center rounded-full border border-border bg-neutral-50 px-2 py-0.5 text-[11px] font-medium text-text-secondary">
+          +{hidden}
+        </span>
+      )}
     </div>
   );
 }
