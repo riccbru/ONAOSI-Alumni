@@ -192,20 +192,7 @@ export function AccordionItem({
             }}
             className="overflow-hidden"
           >
-            <div className="relative border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
-              {/* Scorciatoia alla scheda completa, sovrapposta nell'angolo. */}
-              {showExpand && profileModal && (
-                <button
-                  type="button"
-                  onClick={() => profileModal.openProfile(alumnus)}
-                  aria-label="Apri scheda completa"
-                  title="Apri scheda completa"
-                  className="press absolute right-3 top-3 z-10 inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-neutral-0/90 text-primary-700 shadow-sm backdrop-blur-sm transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
-                >
-                  <ExpandIcon className="h-4 w-4" />
-                </button>
-              )}
-
+            <div className="border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
               {/* Abstract: ogni riga vuota (\n\n nel JSON) separa un paragrafo;
                   i singoli \n diventano a-capo grazie a whitespace-pre-line. */}
               {abstractParagraphs.length > 0 && (
