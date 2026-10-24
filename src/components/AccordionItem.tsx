@@ -18,6 +18,36 @@ import {
 
 const EASE_OUT = [0.23, 1, 0.32, 1] as const;
 
+/** Avatar + badge team leader, riutilizzato sia cliccabile sia statico. */
+function AvatarVisual({
+  alumnus,
+  teamLeader,
+}: {
+  alumnus: Alumnus;
+  teamLeader: boolean;
+}) {
+  return (
+    <>
+      <Avatar
+        src={alumnus.avatar}
+        firstName={alumnus.firstName}
+        lastName={alumnus.lastName}
+        size={56}
+        teamLeader={teamLeader}
+      />
+      {teamLeader && (
+        <span
+          title="Team Leader"
+          aria-label="Team Leader"
+          className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-gradient-to-br from-accent to-accent-soft shadow-[0_1px_4px_rgba(101,221,224,0.6)] ring-2 ring-neutral-0"
+        >
+          <StarIcon className="h-3 w-3 text-primary-950" />
+        </span>
+      )}
+    </>
+  );
+}
+
 /** Riga descrittiva con icona nel corpo dell'accordion. */
 function Row({
   icon,
@@ -73,34 +103,35 @@ export function AccordionItem({
           : "border-border hover:border-primary-200"
       }`}
     >
-      <h3>
-        <button
-          type="button"
-          onClick={onToggle}
-          aria-expanded={isOpen}
-          aria-controls={bodyId}
-          className="press flex w-full items-start gap-3 p-4 text-left sm:gap-4 sm:p-5"
-        >
+      <div className="flex items-start gap-3 p-4 sm:gap-4 sm:p-5">
+        {/* Avatar: nel drawer è cliccabile e apre la scheda completa. */}
+        {showExpand && profileModal ? (
+          <button
+            type="button"
+            onClick={() => profileModal.openProfile(alumnus)}
+            aria-label={`Apri la scheda completa di ${alumnus.firstName} ${alumnus.lastName}`}
+            className="press group relative shrink-0 rounded-full"
+          >
+            <AvatarVisual alumnus={alumnus} teamLeader={f.isTeamLeader} />
+            <span className="absolute inset-0 grid place-items-center rounded-full text-text-inverse opacity-0 transition-opacity duration-150 ease-out group-hover:bg-primary-950/45 group-hover:opacity-100">
+              <ExpandIcon className="h-5 w-5" />
+            </span>
+          </button>
+        ) : (
           <div className="relative shrink-0">
-            <Avatar
-              src={alumnus.avatar}
-              firstName={alumnus.firstName}
-              lastName={alumnus.lastName}
-              size={56}
-              teamLeader={f.isTeamLeader}
-            />
-            {f.isTeamLeader && (
-              <span
-                title="Team Leader"
-                aria-label="Team Leader"
-                className="absolute -right-1 -top-1 grid h-5 w-5 place-items-center rounded-full bg-gradient-to-br from-accent to-accent-soft shadow-[0_1px_4px_rgba(101,221,224,0.6)] ring-2 ring-neutral-0"
-              >
-                <StarIcon className="h-3 w-3 text-primary-950" />
-              </span>
-            )}
+            <AvatarVisual alumnus={alumnus} teamLeader={f.isTeamLeader} />
           </div>
+        )}
 
-          <div className="min-w-0 flex-1">
+        <h3 className="min-w-0 flex-1">
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-expanded={isOpen}
+            aria-controls={bodyId}
+            className="press flex w-full items-start gap-3 text-left"
+          >
+            <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
               <span className="text-[15px] font-bold leading-tight text-primary-900 sm:text-base">
                 {alumnus.firstName} {alumnus.lastName}
@@ -135,15 +166,16 @@ export function AccordionItem({
             )}
           </div>
 
-          <motion.span
-            animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: reduce ? 0 : 0.2, ease: EASE_OUT }}
-            className="mt-1 shrink-0 text-primary-500"
-          >
-            <ChevronDown />
-          </motion.span>
-        </button>
-      </h3>
+            <motion.span
+              animate={{ rotate: isOpen ? 180 : 0 }}
+              transition={{ duration: reduce ? 0 : 0.2, ease: EASE_OUT }}
+              className="mt-1 shrink-0 text-primary-500"
+            >
+              <ChevronDown />
+            </motion.span>
+          </button>
+        </h3>
+      </div>
 
       <AnimatePresence initial={false}>
         {isOpen && (
@@ -160,7 +192,20 @@ export function AccordionItem({
             }}
             className="overflow-hidden"
           >
-            <div className="border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
+            <div className="relative border-t border-border/70 px-4 pb-5 pt-4 sm:px-5">
+              {/* Scorciatoia alla scheda completa, sovrapposta nell'angolo. */}
+              {showExpand && profileModal && (
+                <button
+                  type="button"
+                  onClick={() => profileModal.openProfile(alumnus)}
+                  aria-label="Apri scheda completa"
+                  title="Apri scheda completa"
+                  className="press absolute right-3 top-3 z-10 inline-flex h-8 w-8 items-center justify-center rounded-lg border border-border bg-neutral-0/90 text-primary-700 shadow-sm backdrop-blur-sm transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
+                >
+                  <ExpandIcon className="h-4 w-4" />
+                </button>
+              )}
+
               {/* Abstract: ogni riga vuota (\n\n nel JSON) separa un paragrafo;
                   i singoli \n diventano a-capo grazie a whitespace-pre-line. */}
               {abstractParagraphs.length > 0 && (
@@ -205,21 +250,6 @@ export function AccordionItem({
 
               {/* Contatti & social — solo icone, centrati in fondo al body. */}
               <ContactLinks networking={n} className="mt-6" />
-
-              {/* Scheda completa nel modale (lettura immersiva + link
-                  condivisibile). Centrato in fondo; solo nel drawer. */}
-              {showExpand && profileModal && (
-                <div className="mt-6 flex justify-center">
-                  <button
-                    type="button"
-                    onClick={() => profileModal.openProfile(alumnus)}
-                    className="press inline-flex items-center gap-1.5 rounded-lg border border-border bg-neutral-0 px-3.5 py-2 text-xs font-semibold text-primary-700 transition-colors duration-150 ease-out hover:border-accent hover:text-primary-900"
-                  >
-                    <ExpandIcon className="h-4 w-4" />
-                    Apri scheda completa
-                  </button>
-                </div>
-              )}
             </div>
           </motion.div>
         )}
